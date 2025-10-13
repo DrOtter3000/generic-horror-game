@@ -7,6 +7,7 @@ const JUMP_VELOCITY = 4.5
 @export var normal_camera_position := 1.8
 
 @onready var camera_3d: Camera3D = $Camera3D
+@onready var interaction_raycast: RayCast3D = $Camera3D/InteractionRaycast
 
 
 func _ready() -> void:
@@ -37,10 +38,11 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+	check_for_interactor()
 
 
 func _input(event: InputEvent) -> void:
-	check_for_interactor()
 	if event is InputEventMouseMotion:
 		rotation_degrees.y -= event.relative.x * mouse_sensetivity
 		camera_3d.rotation_degrees.x -= event.relative.y * mouse_sensetivity
@@ -49,4 +51,7 @@ func _input(event: InputEvent) -> void:
 
 func check_for_interactor():
 	#TODO: make this run
-	pass
+	if interaction_raycast.is_colliding():
+		var collider = interaction_raycast.get_collider()
+		if collider is Interactor:
+			print(collider.text)

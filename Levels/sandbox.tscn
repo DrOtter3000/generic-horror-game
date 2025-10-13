@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://pbo6o4r5tmxo"]
+[gd_scene load_steps=8 format=3 uid="uid://pbo6o4r5tmxo"]
 
 [ext_resource type="PackedScene" uid="uid://saebmpkl5tr2" path="res://Characters/Player/player.tscn" id="1_7t7j1"]
+[ext_resource type="PackedScene" uid="uid://db3saivbdiv22" path="res://Interactors/interactor.tscn" id="2_fukds"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7t7j1"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -39,3 +40,6 @@ mesh = SubResource("PlaneMesh_rru0v")
 shape = SubResource("ConcavePolygonShape3D_7t7j1")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_7t7j1")]
+
+[node name="Interactor" parent="." instance=ExtResource("2_fukds")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.341436)
