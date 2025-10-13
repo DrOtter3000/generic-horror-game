@@ -8,6 +8,7 @@ const JUMP_VELOCITY = 4.5
 
 @onready var camera_3d: Camera3D = $Camera3D
 @onready var interaction_raycast: RayCast3D = $Camera3D/InteractionRaycast
+@onready var interaction_label: Label = $HUD/InteractionLabel
 
 
 func _ready() -> void:
@@ -54,4 +55,8 @@ func check_for_interactor():
 	if interaction_raycast.is_colliding():
 		var collider = interaction_raycast.get_collider()
 		if collider is Interactor:
-			print(collider.text)
+			interaction_label.text = collider.text
+		else:
+			interaction_label.text = "."
+	else:
+		interaction_label.text = "."
