@@ -38,6 +38,13 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={
+"materials": {
+"Glass": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/glass.tres",
+"use_external/path": "uid://bbd0t8sqt0amw"
+}
+},
 "nodes": {
 "PATH:Archivists": {
 "generate/physics": true

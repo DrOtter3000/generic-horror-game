@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://blpmdxndl7nn5"]
+
+[ext_resource type="Script" uid="uid://dco02gdth8yir" path="res://Levels/Scripts/car.gd" id="1_evt4b"]
+[ext_resource type="PackedScene" uid="uid://xvkxmedshe4l" path="res://Assets/Cars/Car 02/Car2.blend" id="2_5ckx7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_73x6n"]
+size = Vector3(1.4931641, 1.4658203, 0.8210449)
+
+[node name="Car" type="Area3D"]
+script = ExtResource("1_evt4b")
+text = "You have a job to do"
+
+[node name="Car22" parent="." instance=ExtResource("2_5ckx7")]
+transform = Transform3D(-0.015417026, 0, -0.6998302, 0, 0.7, 0, 0.6998302, 0, -0.015417026, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1538086, 0.66032565, 0.5692234)
+shape = SubResource("BoxShape3D_73x6n")
