@@ -6,4 +6,4 @@ This is a game, made for the GameDev.tv Halloween game jam.
 - [elbolilloduro](https://elbolilloduro.itch.io/) - all PSX assets
 
 ## Technologies
-- [Godot 4.5]
+- [Godot 4.5](https://godotengine.org/)
