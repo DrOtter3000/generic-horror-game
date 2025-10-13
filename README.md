@@ -4,6 +4,7 @@ This is a game, made for the GameDev.tv Halloween game jam.
 
 ## Controls
 - Movement: WASD
+- Interact: E
 - Jump: Spacebar
 - Crouch: Left STRG
 

@@ -55,7 +55,9 @@ func check_for_interactor():
 	if interaction_raycast.is_colliding():
 		var collider = interaction_raycast.get_collider()
 		if collider is Interactor:
-			interaction_label.text = collider.text
+			interaction_label.text = collider.text + " (E)"
+			if Input.is_action_just_pressed("interact"):
+				collider.interact()
 		else:
 			interaction_label.text = "."
 	else:
