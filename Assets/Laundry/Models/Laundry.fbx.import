@@ -37,7 +37,670 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Archivists": {
+"generate/physics": true
+},
+"PATH:Archivists_01": {
+"generate/physics": true
+},
+"PATH:Archivists_02": {
+"generate/physics": true
+},
+"PATH:Background": {
+"generate/physics": true
+},
+"PATH:Background_001": {
+"generate/physics": true
+},
+"PATH:Background_01": {
+"generate/physics": true
+},
+"PATH:Background_01_001": {
+"generate/physics": true
+},
+"PATH:Background_01_001_001": {
+"generate/physics": true
+},
+"PATH:Background_01_01": {
+"generate/physics": true
+},
+"PATH:Background_01_02": {
+"generate/physics": true
+},
+"PATH:Background_02": {
+"generate/physics": true
+},
+"PATH:Board": {
+"generate/physics": true
+},
+"PATH:Cash_register": {
+"generate/physics": true
+},
+"PATH:Checker": {
+"generate/physics": true
+},
+"PATH:Checker_01": {
+"generate/physics": true
+},
+"PATH:Detergent_bottle_01": {
+"generate/physics": true
+},
+"PATH:Detergent_bottle_02": {
+"generate/physics": true
+},
+"PATH:Detergent_bottle_03": {
+"generate/physics": true
+},
+"PATH:Detergent_bottle_03_06": {
+"generate/physics": true
+},
+"PATH:Detergent_bottle_04": {
+"generate/physics": true
+},
+"PATH:Door": {
+"generate/physics": true
+},
+"PATH:DoorsWood": {
+"generate/physics": true
+},
+"PATH:DoorsWood_01": {
+"generate/physics": true
+},
+"PATH:Garbage_bag": {
+"generate/physics": true
+},
+"PATH:Garbage_bag_01": {
+"generate/physics": true
+},
+"PATH:Garbage_bag_02": {
+"generate/physics": true
+},
+"PATH:Glass": {
+"generate/physics": true
+},
+"PATH:Glass_001": {
+"generate/physics": true
+},
+"PATH:Glass_002": {
+"generate/physics": true
+},
+"PATH:Grove": {
+"generate/physics": true
+},
+"PATH:Grove_001": {
+"generate/physics": true
+},
+"PATH:Grove_002": {
+"generate/physics": true
+},
+"PATH:Grove_003": {
+"generate/physics": true
+},
+"PATH:Grove_004": {
+"generate/physics": true
+},
+"PATH:Grove_005": {
+"generate/physics": true
+},
+"PATH:Lamppost": {
+"generate/physics": true
+},
+"PATH:Lamppost_001": {
+"generate/physics": true
+},
+"PATH:Lamppost_002": {
+"generate/physics": true
+},
+"PATH:Lamppost_003": {
+"generate/physics": true
+},
+"PATH:Lamppost_004": {
+"generate/physics": true
+},
+"PATH:Lamppost_005": {
+"generate/physics": true
+},
+"PATH:Laundry": {
+"generate/physics": true
+},
+"PATH:Laundry/Laundry_cover": {
+"generate/physics": true
+},
+"PATH:Laundry_001": {
+"generate/physics": true
+},
+"PATH:Laundry_001/Laundry_cover_001": {
+"generate/physics": true
+},
+"PATH:Laundry_002": {
+"generate/physics": true
+},
+"PATH:Laundry_002/Laundry_cover_002": {
+"generate/physics": true
+},
+"PATH:Laundry_008": {
+"generate/physics": true
+},
+"PATH:Laundry_008/Laundry_cover_003": {
+"generate/physics": true
+},
+"PATH:Laundry_009": {
+"generate/physics": true
+},
+"PATH:Laundry_009/Laundry_cover_004": {
+"generate/physics": true
+},
+"PATH:Laundry_01": {
+"generate/physics": true
+},
+"PATH:Laundry_01/Laundry_cover_01": {
+"generate/physics": true
+},
+"PATH:Laundry_010": {
+"generate/physics": true
+},
+"PATH:Laundry_010/Laundry_cover_005": {
+"generate/physics": true
+},
+"PATH:Laundry_011": {
+"generate/physics": true
+},
+"PATH:Laundry_011/Laundry_cover_006": {
+"generate/physics": true
+},
+"PATH:Laundry_012": {
+"generate/physics": true
+},
+"PATH:Laundry_012/Laundry_cover_007": {
+"generate/physics": true
+},
+"PATH:Laundry_013": {
+"generate/physics": true
+},
+"PATH:Laundry_013/Laundry_cover_008": {
+"generate/physics": true
+},
+"PATH:Laundry_014": {
+"generate/physics": true
+},
+"PATH:Laundry_014/Laundry_cover_009": {
+"generate/physics": true
+},
+"PATH:Laundry_015": {
+"generate/physics": true
+},
+"PATH:Laundry_015/Laundry_cover_010": {
+"generate/physics": true
+},
+"PATH:Laundry_01_001": {
+"generate/physics": true
+},
+"PATH:Laundry_01_001/Laundry_cover_01_001": {
+"generate/physics": true
+},
+"PATH:Laundry_01_002": {
+"generate/physics": true
+},
+"PATH:Laundry_01_002/Laundry_cover_01_002": {
+"generate/physics": true
+},
+"PATH:Laundry_01_003": {
+"generate/physics": true
+},
+"PATH:Laundry_01_003/Laundry_cover_01_003": {
+"generate/physics": true
+},
+"PATH:Laundry_01_005": {
+"generate/physics": true
+},
+"PATH:Laundry_01_005/Laundry_cover_01_005": {
+"generate/physics": true
+},
+"PATH:Laundry_S": {
+"generate/physics": true
+},
+"PATH:Laundry_S/Laundry_S_conver": {
+"generate/physics": true
+},
+"PATH:Laundry_S/Laundry_S_conver_01": {
+"generate/physics": true
+},
+"PATH:Laundry_S/Laundry_S_conver_02": {
+"generate/physics": true
+},
+"PATH:Laundry_S/Laundry_S_conver_03": {
+"generate/physics": true
+},
+"PATH:Laundry_S_001": {
+"import/skip_import": true
+},
+"PATH:Laundry_S_001/Laundry_S_conver_001": {
+"generate/physics": true
+},
+"PATH:Laundry_S_001/Laundry_S_conver_01_001": {
+"generate/physics": true
+},
+"PATH:Laundry_S_001/Laundry_S_conver_02_001": {
+"generate/physics": true
+},
+"PATH:Laundry_S_001/Laundry_S_conver_03_001": {
+"generate/physics": true
+},
+"PATH:Laundry_S_002": {
+"generate/physics": true
+},
+"PATH:Laundry_S_002/Laundry_S_conver_002": {
+"generate/physics": true
+},
+"PATH:Laundry_S_002/Laundry_S_conver_01_002": {
+"generate/physics": true
+},
+"PATH:Laundry_S_002/Laundry_S_conver_02_002": {
+"generate/physics": true
+},
+"PATH:Laundry_S_002/Laundry_S_conver_03_002": {
+"generate/physics": true
+},
+"PATH:Laundry_S_003": {
+"generate/physics": true
+},
+"PATH:Laundry_S_003/Laundry_S_conver_003": {
+"generate/physics": true
+},
+"PATH:Laundry_S_003/Laundry_S_conver_01_003": {
+"generate/physics": true
+},
+"PATH:Laundry_S_003/Laundry_S_conver_02_003": {
+"generate/physics": true
+},
+"PATH:Laundry_S_003/Laundry_S_conver_03_003": {
+"generate/physics": true
+},
+"PATH:Laundry_building": {
+"generate/physics": true
+},
+"PATH:Lines": {
+"generate/physics": true
+},
+"PATH:Lines_001": {
+"generate/physics": true
+},
+"PATH:Lines_002": {
+"generate/physics": true
+},
+"PATH:Lines_003": {
+"generate/physics": true
+},
+"PATH:Lines_004": {
+"generate/physics": true
+},
+"PATH:Lines_005": {
+"generate/physics": true
+},
+"PATH:Lines_006": {
+"generate/physics": true
+},
+"PATH:NurbsCurve": {
+"generate/physics": true
+},
+"PATH:NurbsCurve_001": {
+"generate/physics": true
+},
+"PATH:NurbsCurve_002": {
+"import/skip_import": true
+},
+"PATH:Table": {
+"generate/physics": true
+},
+"PATH:Terrain": {
+"generate/physics": true
+},
+"PATH:Terrain_001": {
+"generate/physics": true
+},
+"PATH:Terrain_002": {
+"generate/physics": true
+},
+"PATH:Terrain_01": {
+"generate/physics": true
+},
+"PATH:Terrain_02": {
+"generate/physics": true
+},
+"PATH:Terrain_02_001": {
+"generate/physics": true
+},
+"PATH:Text_007": {
+"generate/physics": true
+},
+"PATH:TilesPlain": {
+"generate/physics": true
+},
+"PATH:Tree": {
+"generate/physics": true
+},
+"PATH:Tree_001": {
+"generate/physics": true
+},
+"PATH:Tree_01": {
+"generate/physics": true
+},
+"PATH:Tree_01_01": {
+"import/skip_import": true
+},
+"PATH:Tree_02": {
+"generate/physics": true
+},
+"PATH:Tree_03": {
+"generate/physics": true
+},
+"PATH:Tree_03_001": {
+"generate/physics": true
+},
+"PATH:Tree_03_002": {
+"generate/physics": true
+},
+"PATH:Tree_03_003": {
+"generate/physics": true
+},
+"PATH:Tree_03_004": {
+"generate/physics": true
+},
+"PATH:Tree_03_005": {
+"generate/physics": true
+},
+"PATH:Tree_03_006": {
+"generate/physics": true
+},
+"PATH:Tree_03_007": {
+"generate/physics": true
+},
+"PATH:Tree_03_008": {
+"generate/physics": true
+},
+"PATH:Tree_03_009": {
+"generate/physics": true
+},
+"PATH:Tree_03_010": {
+"generate/physics": true
+},
+"PATH:Tree_03_011": {
+"generate/physics": true
+},
+"PATH:Tree_03_012": {
+"generate/physics": true
+},
+"PATH:Tree_03_013": {
+"generate/physics": true
+},
+"PATH:Trees": {
+"generate/physics": true
+},
+"PATH:Trees_001": {
+"generate/physics": true
+},
+"PATH:Trees_01": {
+"generate/physics": true
+},
+"PATH:Trees_02": {
+"generate/physics": true
+},
+"PATH:Trees_03": {
+"generate/physics": true
+},
+"PATH:Trees_04": {
+"generate/physics": true
+},
+"PATH:Trees_05": {
+"generate/physics": true
+},
+"PATH:Trees_06": {
+"generate/physics": true
+},
+"PATH:Trees_07": {
+"generate/physics": true
+},
+"PATH:Trees_08": {
+"generate/physics": true
+},
+"PATH:Trees_09": {
+"generate/physics": true
+},
+"PATH:Trees_10": {
+"generate/physics": true
+},
+"PATH:Trees_11": {
+"generate/physics": true
+},
+"PATH:Trees_12": {
+"generate/physics": true
+},
+"PATH:Trees_13": {
+"generate/physics": true
+},
+"PATH:Trees_14": {
+"generate/physics": true
+},
+"PATH:Trees_15": {
+"generate/physics": true
+},
+"PATH:Vending_machine": {
+"generate/physics": true
+},
+"PATH:Water_dispenser": {
+"generate/physics": true
+},
+"PATH:Window_frame": {
+"generate/physics": true
+},
+"PATH:Window_frame_01": {
+"generate/physics": true
+},
+"PATH:Window_frame_02": {
+"generate/physics": true
+},
+"PATH:WoodPlanksClean": {
+"generate/physics": true
+},
+"PATH:WoodPlanksClean_01": {
+"generate/physics": true
+},
+"PATH:basket": {
+"generate/physics": true
+},
+"PATH:basket_001": {
+"generate/physics": true
+},
+"PATH:basket_002": {
+"generate/physics": true
+},
+"PATH:basket_003": {
+"generate/physics": true
+},
+"PATH:building": {
+"generate/physics": true
+},
+"PATH:building_001": {
+"generate/physics": true
+},
+"PATH:building_002": {
+"generate/physics": true
+},
+"PATH:building_01": {
+"generate/physics": true
+},
+"PATH:building_02": {
+"generate/physics": true
+},
+"PATH:building_03": {
+"generate/physics": true
+},
+"PATH:building_03_001": {
+"generate/physics": true
+},
+"PATH:building_03_002": {
+"generate/physics": true
+},
+"PATH:building_03_003": {
+"generate/physics": true
+},
+"PATH:building_04": {
+"generate/physics": true
+},
+"PATH:counter_bell": {
+"generate/physics": true
+},
+"PATH:frame_door": {
+"generate/physics": true
+},
+"PATH:frame_door_01": {
+"generate/physics": true
+},
+"PATH:frame_door_02": {
+"generate/physics": true
+},
+"PATH:lamp_001": {
+"generate/physics": true
+},
+"PATH:lamp_002": {
+"generate/physics": true
+},
+"PATH:lamp_003": {
+"generate/physics": true
+},
+"PATH:lamp_004": {
+"generate/physics": true
+},
+"PATH:lamp_005": {
+"generate/physics": true
+},
+"PATH:lamp_006": {
+"generate/physics": true
+},
+"PATH:lamp_007": {
+"generate/physics": true
+},
+"PATH:lamp_008": {
+"generate/physics": true
+},
+"PATH:lamp_009": {
+"generate/physics": true
+},
+"PATH:lamp_010": {
+"generate/physics": true
+},
+"PATH:lamp_011": {
+"generate/physics": true
+},
+"PATH:lamp_012": {
+"generate/physics": true
+},
+"PATH:lamp_013": {
+"generate/physics": true
+},
+"PATH:lamp_014": {
+"generate/physics": true
+},
+"PATH:lamp_015": {
+"generate/physics": true
+},
+"PATH:lamp_016": {
+"generate/physics": true
+},
+"PATH:lamp_017": {
+"generate/physics": true
+},
+"PATH:lamp_018": {
+"generate/physics": true
+},
+"PATH:lamp_019": {
+"generate/physics": true
+},
+"PATH:lamp_020": {
+"generate/physics": true
+},
+"PATH:lamp_021": {
+"generate/physics": true
+},
+"PATH:lamp_022": {
+"generate/physics": true
+},
+"PATH:lamp_023": {
+"generate/physics": true
+},
+"PATH:lamp_024": {
+"generate/physics": true
+},
+"PATH:lamp_025": {
+"generate/physics": true
+},
+"PATH:lamp_026": {
+"generate/physics": true
+},
+"PATH:shelf": {
+"generate/physics": true
+},
+"PATH:shelf_01": {
+"generate/physics": true
+},
+"PATH:shelf_02": {
+"generate/physics": true
+},
+"PATH:shelf_03": {
+"generate/physics": true
+},
+"PATH:sidewalk": {
+"generate/physics": true
+},
+"PATH:sidewalk_001": {
+"generate/physics": true
+},
+"PATH:sidewalk_002": {
+"generate/physics": true
+},
+"PATH:sidewalk_003": {
+"generate/physics": true
+},
+"PATH:sidewalk_004": {
+"generate/physics": true
+},
+"PATH:sidewalk_005": {
+"generate/physics": true
+},
+"PATH:sidewalk_01": {
+"generate/physics": true
+},
+"PATH:sidewalk_01_001": {
+"generate/physics": true
+},
+"PATH:trash_can": {
+"generate/physics": true
+},
+"PATH:trash_can_001": {
+"generate/physics": true
+},
+"PATH:trash_can_01": {
+"generate/physics": true
+},
+"PATH:trash_can_02": {
+"generate/physics": true
+},
+"PATH:trash_can_03": {
+"generate/physics": true
+},
+"PATH:trash_can_Top_01": {
+"generate/physics": true
+},
+"PATH:trash_can_Top_02": {
+"generate/physics": true
+},
+"PATH:trash_can_Top_03": {
+"generate/physics": true
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

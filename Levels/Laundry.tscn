@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bagtcabdgvbxv"]
+
+[ext_resource type="PackedScene" uid="uid://dcvyka1tqthjn" path="res://Assets/Laundry/Models/Laundry.fbx" id="1_rbieh"]
+[ext_resource type="PackedScene" uid="uid://saebmpkl5tr2" path="res://Characters/Player/player.tscn" id="2_4hk4t"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Laundry" parent="." instance=ExtResource("1_rbieh")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_4hk4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.421622, 0, -21.53929)
+
+[editable path="Laundry"]

@@ -46,3 +46,12 @@ theme_override_constants/outline_size = 2
 text = "."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Taskscontainer" type="MarginContainer" parent="HUD"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Tasks" type="VBoxContainer" parent="HUD/Taskscontainer"]
+layout_mode = 2
