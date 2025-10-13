@@ -2,6 +2,11 @@
 
 This is a game, made for the GameDev.tv Halloween game jam.
 
+## Controls
+- Movement: WASD
+- Jump: Spacebar
+- Crouch: Left STRG
+
 ## Credits
 - [elbolilloduro](https://elbolilloduro.itch.io/) - all PSX assets
 
