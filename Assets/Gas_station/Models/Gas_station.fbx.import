@@ -37,7 +37,335 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"materials": {
+"Glass": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/glass.tres",
+"use_external/path": "uid://bbd0t8sqt0amw"
+}
+},
+"nodes": {
+"PATH:6twelve": {
+"generate/physics": true
+},
+"PATH:6twelve_003": {
+"generate/physics": true
+},
+"PATH:6twelve_Sign": {
+"generate/physics": true
+},
+"PATH:AsphaltDamaged": {
+"generate/physics": true
+},
+"PATH:Asphalt_01": {
+"generate/physics": true
+},
+"PATH:Asphalt_02": {
+"generate/physics": true
+},
+"PATH:Bathrooms": {
+"generate/physics": true
+},
+"PATH:Board": {
+"generate/physics": true
+},
+"PATH:Boxs": {
+"generate/physics": true
+},
+"PATH:Boxs_001": {
+"generate/physics": true
+},
+"PATH:Boxs_002": {
+"generate/physics": true
+},
+"PATH:Boxs_003": {
+"generate/physics": true
+},
+"PATH:Boxs_004": {
+"generate/physics": true
+},
+"PATH:Boxs_005": {
+"generate/physics": true
+},
+"PATH:Boxs_006": {
+"generate/physics": true
+},
+"PATH:Boxs_007": {
+"generate/physics": true
+},
+"PATH:Boxs_008": {
+"generate/physics": true
+},
+"PATH:Chair": {
+"generate/physics": true
+},
+"PATH:Checker": {
+"generate/physics": true
+},
+"PATH:Coffee_machine": {
+"generate/physics": true
+},
+"PATH:Desk": {
+"generate/physics": true
+},
+"PATH:Dispenser": {
+"generate/physics": true
+},
+"PATH:Door": {
+"generate/physics": true
+},
+"PATH:Door_01": {
+"generate/physics": true
+},
+"PATH:Door_02": {
+"generate/physics": true
+},
+"PATH:Dumpster": {
+"generate/physics": true
+},
+"PATH:Dumpster_T": {
+"generate/physics": true
+},
+"PATH:Frame_01": {
+"generate/physics": true
+},
+"PATH:Frame_02": {
+"generate/physics": true
+},
+"PATH:Frame_03": {
+"generate/physics": true
+},
+"PATH:Fridge": {
+"generate/physics": true
+},
+"PATH:Fridge_D": {
+"generate/physics": true
+},
+"PATH:Fridge_D_01": {
+"generate/physics": true
+},
+"PATH:Fuel_pump": {
+"generate/physics": true
+},
+"PATH:Fuel_pump_01": {
+"generate/physics": true
+},
+"PATH:Fuel_pump_02": {
+"generate/physics": true
+},
+"PATH:Fuel_pump_03": {
+"generate/physics": true
+},
+"PATH:Fusible": {
+"generate/physics": true
+},
+"PATH:Fusible_D": {
+"generate/physics": true
+},
+"PATH:Fusible_P": {
+"generate/physics": true
+},
+"PATH:Gadgets": {
+"generate/physics": true
+},
+"PATH:Glass": {
+"generate/physics": true
+},
+"PATH:Glass_001": {
+"generate/physics": true
+},
+"PATH:Glass_002": {
+"generate/physics": true
+},
+"PATH:Glass_003": {
+"generate/physics": true
+},
+"PATH:Ground": {
+"generate/physics": true
+},
+"PATH:ICE": {
+"generate/physics": true
+},
+"PATH:Management": {
+"generate/physics": true
+},
+"PATH:Management_001": {
+"generate/physics": true
+},
+"PATH:Management_0012": {
+"generate/physics": true
+},
+"PATH:Management_002": {
+"generate/physics": true
+},
+"PATH:Management_003": {
+"generate/physics": true
+},
+"PATH:Management_004": {
+"generate/physics": true
+},
+"PATH:Management_005": {
+"generate/physics": true
+},
+"PATH:Management_006": {
+"generate/physics": true
+},
+"PATH:Management_007": {
+"generate/physics": true
+},
+"PATH:Management_008": {
+"generate/physics": true
+},
+"PATH:Management_009": {
+"generate/physics": true
+},
+"PATH:Management_010": {
+"generate/physics": true
+},
+"PATH:Management_011": {
+"generate/physics": true
+},
+"PATH:Metal_03": {
+"generate/physics": true
+},
+"PATH:Others": {
+"generate/physics": true
+},
+"PATH:Others_01": {
+"generate/physics": true
+},
+"PATH:Pillar": {
+"generate/physics": true
+},
+"PATH:Pillar_01": {
+"generate/physics": true
+},
+"PATH:Road": {
+"generate/physics": true
+},
+"PATH:Sanitary": {
+"generate/physics": true
+},
+"PATH:Sanitary_001": {
+"generate/physics": true
+},
+"PATH:Sanitary_002": {
+"generate/physics": true
+},
+"PATH:Sanitary_003": {
+"generate/physics": true
+},
+"PATH:Sanitary_004": {
+"generate/physics": true
+},
+"PATH:Sanitary_005": {
+"generate/physics": true
+},
+"PATH:Sanitary_006": {
+"generate/physics": true
+},
+"PATH:Sanitary_007": {
+"generate/physics": true
+},
+"PATH:Sanitary_008": {
+"generate/physics": true
+},
+"PATH:Sanitary_009": {
+"generate/physics": true
+},
+"PATH:Sanitary_010": {
+"generate/physics": true
+},
+"PATH:Sanitary_011": {
+"generate/physics": true
+},
+"PATH:Sanitary_012": {
+"generate/physics": true
+},
+"PATH:Sanitary_013": {
+"generate/physics": true
+},
+"PATH:Sanitary_014": {
+"generate/physics": true
+},
+"PATH:Sanitary_015": {
+"generate/physics": true
+},
+"PATH:Sanitary_016": {
+"generate/physics": true
+},
+"PATH:Sanitary_017": {
+"generate/physics": true
+},
+"PATH:Shelf_Metal": {
+"generate/physics": true
+},
+"PATH:Shelving": {
+"generate/physics": true
+},
+"PATH:Shelving_001": {
+"generate/physics": true
+},
+"PATH:Shelving_002": {
+"generate/physics": true
+},
+"PATH:Shelving_003": {
+"generate/physics": true
+},
+"PATH:Shelving_004": {
+"generate/physics": true
+},
+"PATH:Shelving_005": {
+"generate/physics": true
+},
+"PATH:Shelving_006": {
+"generate/physics": true
+},
+"PATH:Shelving_007": {
+"generate/physics": true
+},
+"PATH:Sidewalk": {
+"generate/physics": true
+},
+"PATH:Sidewalk_01": {
+"generate/physics": true
+},
+"PATH:The_ceiling": {
+"generate/physics": true
+},
+"PATH:Tiles": {
+"generate/physics": true
+},
+"PATH:Tiles_01": {
+"generate/physics": true
+},
+"PATH:Toilets_Sing": {
+"generate/physics": true
+},
+"PATH:Trash": {
+"generate/physics": true
+},
+"PATH:Trash_001": {
+"generate/physics": true
+},
+"PATH:Trash_002": {
+"generate/physics": true
+},
+"PATH:Trash_003": {
+"generate/physics": true
+},
+"PATH:Window_frame": {
+"generate/physics": true
+},
+"PATH:ice_slush_machine": {
+"generate/physics": true
+},
+"PATH:ice_slush_machine_001": {
+"generate/physics": true
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1
