@@ -9,4 +9,5 @@ func interact() -> void:
 		print("do your stuffs")
 
 func everything_finished() -> void:
+	jobs_done = true
 	text = "Use Car"

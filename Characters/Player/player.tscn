@@ -8,7 +8,7 @@ radius = 0.3
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vyvq2"]
 radius = 0.3
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_6xdwp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
