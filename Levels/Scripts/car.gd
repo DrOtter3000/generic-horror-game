@@ -1,5 +1,7 @@
 extends Interactor
 
+@export var next_scene: PackedScene
+
 func _ready() -> void:
 	super()
 	text = "Use Car"
@@ -7,8 +9,10 @@ func _ready() -> void:
 func interact() -> void:
 	var job_counter = player.tasks.get_child_count()
 	if job_counter == 0:
-		text = "Use Car"
-		queue_free()
+		switch_scene()
 	else:
 		#TODO: Add other behaviour
 		print("do your stuffs")
+
+func switch_scene() -> void:
+	get_tree().change_scene_to_packed(next_scene)
