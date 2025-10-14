@@ -1,6 +1,6 @@
 # Generic Horror Game
 
-This is a game, made for the GameDev.tv Halloween game jam.
+This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam/gamedevtv-halloween-jam-2025).
 
 ## Controls
 - Movement: WASD
