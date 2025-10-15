@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxxgcdsqkd8o"]
+
+[ext_resource type="Script" uid="uid://ce1ju6ektxl0x" path="res://Globals/audio_manager.gd" id="1_gbvha"]
+[ext_resource type="AudioStream" uid="uid://c4td0tgswcdw2" path="res://Audio/SFX/sound-of-car-engine-starting.mp3" id="1_kho5r"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_gbvha")
+
+[node name="CarStartAudioPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_kho5r")

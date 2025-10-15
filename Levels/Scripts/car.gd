@@ -15,4 +15,5 @@ func interact() -> void:
 		print("do your stuffs")
 
 func switch_scene() -> void:
+	AudioManager.car_start_audio_player.play()
 	get_tree().change_scene_to_packed(next_scene)
