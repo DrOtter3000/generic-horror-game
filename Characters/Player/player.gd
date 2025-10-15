@@ -12,10 +12,11 @@ var working := false
 @onready var interaction_raycast: RayCast3D = $Camera3D/InteractionRaycast
 @onready var interaction_label: Label = $HUD/InteractionLabel
 @onready var tasks: VBoxContainer = $HUD/Taskscontainer/Tasks
-
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	fade_in()
 
 func _physics_process(delta: float) -> void:
 	if working:
@@ -71,3 +72,9 @@ func check_for_interactor():
 
 func change_working_status(status: bool) -> void:
 	working = status
+
+func fade_in() -> void:
+	animation_player.play("fade_in")
+
+func fade_out() -> void:
+	animation_player.play("fade_out")
