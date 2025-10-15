@@ -8,3 +8,4 @@ script = ExtResource("1_gbvha")
 
 [node name="CarStartAudioPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_kho5r")
+bus = &"SFX"
