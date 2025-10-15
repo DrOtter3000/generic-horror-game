@@ -4,6 +4,9 @@ extends Interactor
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+func _ready() -> void:
+	text = "Use Door"
+
 func interact() -> void:
 	if !animation_player.is_playing():
 		if is_closed:
