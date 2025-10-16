@@ -32,9 +32,10 @@ func interact() -> void:
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Thank you alot. Come to the window, I'm there right now!")
 	await get_tree().create_timer(wait_time).timeout
-	player.change_working_status(false)
+	get_tree().call_group("BurgerPlace", "add_drive_trough_task")
+	get_tree().call_group("HUD", "deactivate_interaction_label", false)
 	phone_sound.stream = hang_up_phone_sound
 	phone_sound.play()
 	await get_tree().create_timer(3).timeout
-	get_tree().call_group("HUD", "deactivate_interaction_label", false)
+	player.change_working_status(false)
 	queue_free()

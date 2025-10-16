@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch2bkmh3bppjd"]
+
+[ext_resource type="Script" uid="uid://l0f3sh7bfgop" path="res://Levels/Scripts/drive_through_window.gd" id="1_0ccfb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s4tjc"]
+size = Vector3(0.27490234, 1, 0.72998047)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0ccfb"]
+
+[node name="DriveThroughWindow" type="Area3D"]
+script = ExtResource("1_0ccfb")
+task_name = "Go to Drive Through"
+text = "Open Window"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6579337, 0.55506015, 0.13500977)
+shape = SubResource("BoxShape3D_s4tjc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_0ccfb")
