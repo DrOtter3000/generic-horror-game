@@ -1,0 +1,110 @@
+[gd_scene load_steps=8 format=3 uid="uid://c33sr5ed3kxc0"]
+
+[ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="1_ioddx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ioddx"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_45od6"]
+sky_material = SubResource("ProceduralSkyMaterial_ioddx")
+
+[sub_resource type="Environment" id="Environment_gni6d"]
+sky = SubResource("Sky_45od6")
+tonemap_mode = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_ioddx"]
+resource_name = "jumpscare"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 2.1447875), Vector3(0, 0, 1.79953)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.68, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -0.2814169), Vector3(0, 0, 0.24502806), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_45od6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 2.1447875)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gni6d"]
+_data = {
+&"RESET": SubResource("Animation_45od6"),
+&"jumpscare": SubResource("Animation_ioddx")
+}
+
+[node name="jumpscare" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_gni6d")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1447875)
+
+[node name="Creature" parent="." instance=ExtResource("1_ioddx")]
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.29999998, 0, 0.3, 0, -1.3113417e-08, 0, -1.8095814, -0.1157037)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_gni6d")
+}
+autoplay = "jumpscare"
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14613864, 3.4910505)
+light_color = Color(0.999675, 0.15241843, 0.10921829, 1)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.7791302, 0.04859373, 0.62497586, 0.30295876, 0.9020135, 0.3075513, -0.5487915, 0.42896438, -0.71750784, 2.6874986, 1.743477, -0.8008425)
+light_color = Color(0.4480065, 0.4768229, 1, 1)
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.04011441, -0.9991951, 0, 0.9991951, -0.04011441, 0.81028926, -3.457138, 2.7915933)
+light_color = Color(0.94509804, 0, 0.1882353, 1)
