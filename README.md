@@ -8,8 +8,11 @@ This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam
 - Jump: Spacebar
 - Crouch: Left STRG
 
-## Credits
+## External Sources
+### Graphics 
 - [elbolilloduro](https://elbolilloduro.itch.io/) - all PSX assets
+### Sounds
+- [freesoundlibrary.com](https://www.freesoundslibrary.com)
 
 ## Technologies
 - [Godot 4.5](https://godotengine.org/)
