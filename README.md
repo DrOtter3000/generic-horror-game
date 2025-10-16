@@ -16,3 +16,6 @@ This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam
 
 ## Technologies
 - [Godot 4.5](https://godotengine.org/)
+- [Blender](https://www.blender.org/)
+- [GIMP](https://www.gimp.org/)
+- [Audacity](https://www.audacityteam.org/)
