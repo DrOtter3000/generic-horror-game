@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://saebmpkl5tr2"]
+[gd_scene load_steps=9 format=3 uid="uid://saebmpkl5tr2"]
 
 [ext_resource type="Script" uid="uid://bdhp6yf5h6hms" path="res://Characters/Player/player.gd" id="1_6xdwp"]
+[ext_resource type="Script" uid="uid://bjmgeikc7n6xo" path="res://Characters/Player/hud.gd" id="2_j341n"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_kww3p"]
 radius = 0.3
@@ -86,7 +87,8 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
+script = ExtResource("2_j341n")
 
 [node name="InteractionLabel" type="Label" parent="HUD"]
 anchors_preset = 8
@@ -115,6 +117,44 @@ theme_override_constants/margin_top = 10
 
 [node name="Tasks" type="VBoxContainer" parent="HUD/Taskscontainer"]
 layout_mode = 2
+
+[node name="CommunicationContainer" type="MarginContainer" parent="HUD"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -273.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ColorRect" type="ColorRect" parent="HUD/CommunicationContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 0.32156864)
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD/CommunicationContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/CommunicationContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="HUD/CommunicationContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Name"
+
+[node name="MessageLabel" type="Label" parent="HUD/CommunicationContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
+autowrap_mode = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
