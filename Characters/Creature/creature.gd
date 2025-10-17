@@ -2,7 +2,7 @@ class_name Creature
 extends Node3D
 
 var moving := false
-var speed := .03
+var speed := 1.5
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
@@ -13,5 +13,5 @@ func leave_window() -> void:
 
 func _process(delta: float) -> void:
 	if moving:
-		position.z -= speed
+		position.z -= speed * delta
 		
