@@ -6,7 +6,7 @@ extends task_interactor
 @onready var pick_up_phone_sound = preload("res://Audio/SFX/PickUpPhone.wav")
 @onready var hang_up_phone_sound = preload("res://Audio/SFX/HangUpPhone.wav")
 
-var wait_time := 1
+var wait_time := .1
 
 func interact() -> void:
 	super()

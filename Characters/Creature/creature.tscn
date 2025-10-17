@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://drckt6w53jjyb"]
+[gd_scene load_steps=5 format=3 uid="uid://drckt6w53jjyb"]
 
 [ext_resource type="PackedScene" uid="uid://qvnfotbts6xe" path="res://Assets/Creatures/Creature.blend" id="1_2vvdv"]
 [ext_resource type="Texture2D" uid="uid://f6ycich2q4bl" path="res://Assets/Creatures/W3.png" id="2_60ica"]
+[ext_resource type="Script" uid="uid://ck1em1favlqi1" path="res://Characters/Creature/creature.gd" id="2_gorid"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gorid"]
 albedo_texture = ExtResource("2_60ica")
 albedo_texture_force_srgb = true
 
-[node name="Creature" instance=ExtResource("1_2vvdv")]
+[node name="Creature" groups=["Creature"] instance=ExtResource("1_2vvdv")]
+script = ExtResource("2_gorid")
 
 [node name="Skeleton3D" parent="W3_001" index="0"]
 bones/0/rotation = Quaternion(-0.00021046484, -0.0010428522, -0.32373008, 0.94614893)
@@ -17,6 +19,7 @@ bones/3/rotation = Quaternion(5.086803e-09, 2.3045972e-08, -0.088582896, 0.99606
 bones/4/rotation = Quaternion(-0.00062108703, 0.00046614598, 0.03131963, 0.9995091)
 bones/5/rotation = Quaternion(3.6193892e-08, 2.3117978e-07, -0.10096187, 0.9948903)
 bones/7/rotation = Quaternion(2.74284e-08, 1.8011889e-07, -0.08326687, 0.9965273)
+bones/9/rotation = Quaternion(6.167425e-08, 5.523506e-07, -0.09135249, 0.9958186)
 bones/10/rotation = Quaternion(-1.7109429e-08, 3.057575e-07, 0.015126992, 0.9998857)
 bones/11/rotation = Quaternion(7.2320465e-09, 6.3835955e-08, -0.003897056, 0.99999243)
 bones/12/rotation = Quaternion(-2.4895027e-11, 6.771493e-12, 2.2980812e-10, 1)
