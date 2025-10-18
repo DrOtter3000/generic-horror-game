@@ -36,6 +36,6 @@ func interact() -> void:
 	get_tree().call_group("HUD", "deactivate_interaction_label", false)
 	phone_sound.stream = hang_up_phone_sound
 	phone_sound.play()
-	await get_tree().create_timer(3).timeout
+	await get_tree().create_timer(1).timeout
 	player.change_working_status(false)
 	queue_free()

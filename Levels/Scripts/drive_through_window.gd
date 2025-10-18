@@ -9,7 +9,6 @@ func _ready() -> void:
 
 func interact() -> void:
 	super()
-	print(player)
 	player.change_working_status(true)
 	get_tree().call_group("HUD", "deactivate_interaction_label", true)
 	get_tree().call_group("HUD", "update_communication_container", "Creature", "Hi, I'm here to pick up my purse")
