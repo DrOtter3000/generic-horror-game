@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://r731dx7xonm1" path="res://Levels/tv_switch.gd" id="1_urbxr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pq8cq"]
-size = Vector3(1.7269897, 1, 1)
+size = Vector3(1.7269897, 1, 0.65075684)
 
 [node name="TVSwitch" type="Area3D"]
 script = ExtResource("1_urbxr")
 text = "Turn Off"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0032348633)
 shape = SubResource("BoxShape3D_pq8cq")

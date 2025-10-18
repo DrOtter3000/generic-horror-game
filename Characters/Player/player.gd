@@ -67,6 +67,10 @@ func check_for_interactor():
 			if Input.is_action_just_pressed("interact"):
 				collider.interact()
 		else:
+			if collider is DangerZone:
+				if collider.active:
+					# TODO: connect jumpscare 
+					print("game_over")
 			interaction_label.text = "."
 	else:
 		interaction_label.text = "."
