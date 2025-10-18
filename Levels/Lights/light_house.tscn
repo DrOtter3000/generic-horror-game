@@ -3,3 +3,5 @@
 [node name="LightHouse" type="OmniLight3D"]
 light_color = Color(1, 1, 0.8745098, 1)
 light_energy = 0.8
+light_size = 0.15
+shadow_enabled = true

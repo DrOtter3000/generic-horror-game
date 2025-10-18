@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dfybwx6045fyl"]
+
+[node name="IndustrialLight" type="OmniLight3D"]
+light_size = 1.0
+shadow_enabled = true
