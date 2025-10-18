@@ -70,7 +70,7 @@ func check_for_interactor():
 			if collider is DangerZone:
 				if collider.active:
 					# TODO: connect jumpscare 
-					pass
+					get_tree().change_scene_to_file("res://Jumpscare/jumpscare.tscn")
 			interaction_label.text = "."
 	else:
 		interaction_label.text = "."

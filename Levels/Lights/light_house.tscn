@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cknpiknhruscn"]
+
+[node name="LightHouse" type="OmniLight3D"]
+light_color = Color(1, 1, 0.8745098, 1)
+light_energy = 0.8
