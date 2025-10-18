@@ -19,4 +19,5 @@ func interact() -> void:
 	get_parent().add_child(tv_switch_instance)
 	tv_switch_instance.rotation = tv_switch_position.rotation
 	tv_switch_instance.position = tv_switch_position.position
+	tv_switch_instance.last_level = true
 	queue_free()
