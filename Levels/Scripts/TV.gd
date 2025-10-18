@@ -5,10 +5,10 @@ extends MeshInstance3D
 @onready var static_audio_player: AudioStreamPlayer3D = $StaticAudioPlayer
 
 
-func tv_noise(status: bool) -> void:
+func tv_noise(status: bool, material_pos: int) -> void:
 	if status == false:
-		set_surface_override_material(2, material_off)
+		set_surface_override_material(material_pos, material_off)
 		static_audio_player.stop()
 	else:
-		set_surface_override_material(2, material_on)
+		set_surface_override_material(material_pos, material_on)
 		static_audio_player.play()
