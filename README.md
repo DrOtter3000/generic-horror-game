@@ -11,8 +11,11 @@ This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam
 ## External Sources
 ### Graphics 
 - [elbolilloduro](https://elbolilloduro.itch.io/) - all PSX assets
+- [KnightNine](https://godotshaders.com/shader/the-pain-shader/)
+
 ### Sounds
 - [freesoundlibrary.com](https://www.freesoundslibrary.com)
+- [soundjay.com](https://www.soundjay.com)
 
 ## Technologies
 - [Godot 4.5](https://godotengine.org/)
