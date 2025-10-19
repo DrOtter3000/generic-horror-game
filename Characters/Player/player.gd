@@ -13,10 +13,11 @@ var working := false
 @onready var interaction_raycast: RayCast3D = $Camera3D/InteractionRaycast
 @onready var interaction_label: Label = $HUD/InteractionLabel
 @onready var tasks: VBoxContainer = $HUD/Taskscontainer/Tasks
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var finish_yourjob_label: Label = $HUD/FinishYourjobLabel
 @onready var finish_job_timer: Timer = $HUD/FinishJobTimer
 @onready var flashlight: SpotLight3D = $Camera3D/Flashlight
+@onready var fade_player: AnimationPlayer = $FadePlayer
+@onready var hud: CanvasLayer = $HUD
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -32,6 +33,8 @@ var footstep_sounds := [
 ]
 
 func _ready() -> void:
+	working = true
+	hud_visible(false)
 	flashlight.light_energy = 0
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	fade_in()
@@ -116,10 +119,10 @@ func change_working_status(status: bool) -> void:
 	working = status
 
 func fade_in() -> void:
-	animation_player.play("fade_in")
+	fade_player.play("fade_in")
 
 func fade_out() -> void:
-	animation_player.play("fade_out")
+	fade_player.play("fade_out")
 
 func show_finish_your_job_label() -> void:
 	finish_yourjob_label.show()
@@ -128,3 +131,9 @@ func show_finish_your_job_label() -> void:
 
 func _on_finish_job_timer_timeout() -> void:
 	finish_yourjob_label.hide()
+
+func hud_visible(status: bool) -> void:
+	if status == true:
+		hud.show()
+	else:
+		hud.hide()
