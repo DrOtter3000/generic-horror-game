@@ -19,6 +19,17 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://Globals/audio_manager.tscn"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+
+[gui]
+
+theme/custom="uid://duo5dcrokfwiu"
+theme/custom_font="uid://b86ecu0lg4ao0"
+
 [input]
 
 jump={

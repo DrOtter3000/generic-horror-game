@@ -7,13 +7,13 @@ extends task_interactor
 
 
 func interact() -> void:
-	animation_player.play("repair")
-	
+	super()
 	var tv_switch_instance = tv_switch.instantiate()
 	get_parent().add_child(tv_switch_instance)
 	tv_switch_instance.rotation = tv_switch_position.rotation
 	tv_switch_instance.position = tv_switch_position.position
 	creature_position.show()
+	animation_player.play("repair")
 
 func turn_tv_on() -> void:
 	get_tree().call_group("TV", "tv_noise", true, 2)
