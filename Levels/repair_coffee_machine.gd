@@ -16,4 +16,4 @@ func interact() -> void:
 	creature_position.show()
 
 func turn_tv_on() -> void:
-	get_tree().call_group("TV", "tv_noise", true, 3)
+	get_tree().call_group("TV", "tv_noise", true, 2)
