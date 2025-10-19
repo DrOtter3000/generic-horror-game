@@ -4,7 +4,6 @@ extends CharacterBody3D
 const SPEED = 4.0
 const JUMP_VELOCITY = 4.5
 
-@export var mouse_sensetivity := .08
 @export var normal_camera_position := 1.8
 
 var working := false
@@ -18,6 +17,7 @@ var working := false
 @onready var flashlight: SpotLight3D = $Camera3D/Flashlight
 @onready var fade_player: AnimationPlayer = $FadePlayer
 @onready var hud: CanvasLayer = $HUD
+@onready var options = preload("res://Menus/options.tscn")
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -38,6 +38,11 @@ func _ready() -> void:
 	flashlight.light_energy = 0
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	fade_in()
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("pause"):
+		var options_instance = options.instantiate()
+		add_child(options_instance)
 
 func _physics_process(delta: float) -> void:
 	if working:
@@ -93,8 +98,8 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if working:
 			return
-		rotation_degrees.y -= event.relative.x * mouse_sensetivity
-		camera_3d.rotation_degrees.x -= event.relative.y * mouse_sensetivity
+		rotation_degrees.y -= event.relative.x * Gamestate.mouse_sensetivity
+		camera_3d.rotation_degrees.x -= event.relative.y * Gamestate.mouse_sensetivity
 		camera_3d.rotation_degrees.x = clamp(camera_3d.rotation_degrees.x, -90, 90)
 
 

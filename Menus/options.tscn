@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://chu7acyqq486q"]
+
+[ext_resource type="Script" uid="uid://bjk30vjnv4nn5" path="res://Menus/options.gd" id="1_7afk1"]
+
+[node name="Options" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7afk1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12225223, 0.12225223, 0.12225223, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SoundLabel" type="Label" parent="CenterContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Audio"
+
+[node name="SoundSlider" type="HSlider" parent="CenterContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SensetivityLabel" type="Label" parent="CenterContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Mouse Sensetivity"
+
+[node name="SensetivitySlider" type="HSlider" parent="CenterContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+min_value = 0.01
+max_value = 1.0
+step = 0.01
+value = 0.01
+
+[node name="FullscreenButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="BackToMenuButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back to Main Menu"
+
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/VBoxContainer/SoundSlider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BackToMenuButton" to="." method="_on_back_to_menu_button_pressed"]
