@@ -15,6 +15,20 @@ var working := false
 @onready var tasks: VBoxContainer = $HUD/Taskscontainer/Tasks
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+### Steps ###
+@export var step_after_dist := 2.5
+var dist_travelled_since_last_step := 0.0
+@onready var step_player: AudioStreamPlayer3D = $StepPlayer
+@onready var last_pos: Vector3 = global_position
+var footstep_sounds := [
+	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_1.wav"),
+	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_2.wav"),
+	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_3.wav"),
+	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_4.wav"),
+	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_5.wav")
+]
+
+
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	fade_in()
@@ -22,6 +36,20 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if working:
 		return
+	
+	### Steps ###
+	if !is_on_floor():
+		dist_travelled_since_last_step = 0.0
+	
+	dist_travelled_since_last_step += global_position.distance_to(last_pos)
+	if dist_travelled_since_last_step >= step_after_dist:
+		var footstep_sound = footstep_sounds.pick_random() 
+		dist_travelled_since_last_step = 0.0
+		step_player.stream = footstep_sound
+		step_player.pitch_scale = randf_range(0.8, 1.2)
+		step_player.play()
+	
+	last_pos = global_position
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
