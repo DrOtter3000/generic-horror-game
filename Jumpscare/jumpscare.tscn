@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://c33sr5ed3kxc0"]
+[gd_scene load_steps=11 format=3 uid="uid://c33sr5ed3kxc0"]
 
 [ext_resource type="Script" uid="uid://brnkdtpbjbcdx" path="res://Jumpscare/jumpscare.gd" id="1_gni6d"]
 [ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="1_ioddx"]
 [ext_resource type="FontFile" uid="uid://b3ki50kq67pup" path="res://Themes/Fonts/BLOODY.TTF" id="2_45od6"]
+[ext_resource type="AudioStream" uid="uid://58qxtsq7im51" path="res://Audio/SFX/rake-jumpscare-sound-effect.mp3" id="4_rxst3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ioddx"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -157,6 +158,11 @@ text = "Back to Menu"
 wait_time = 5.0
 one_shot = true
 autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rxst3")
+autoplay = true
+bus = &"SFX"
 
 [connection signal="pressed" from="Options/CenterContainer/VBoxContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Options/CenterContainer/VBoxContainer/VBoxContainer/BackToMenuButton" to="." method="_on_back_to_menu_button_pressed"]
