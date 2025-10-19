@@ -28,7 +28,6 @@ var footstep_sounds := [
 	preload("res://Audio/SFX/Footsteps/footsteps-sound-effect_5.wav")
 ]
 
-
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	fade_in()
