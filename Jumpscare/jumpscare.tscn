@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://c33sr5ed3kxc0"]
+[gd_scene load_steps=10 format=3 uid="uid://c33sr5ed3kxc0"]
 
+[ext_resource type="Script" uid="uid://brnkdtpbjbcdx" path="res://Jumpscare/jumpscare.gd" id="1_gni6d"]
 [ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="1_ioddx"]
+[ext_resource type="FontFile" uid="uid://b3ki50kq67pup" path="res://Themes/Fonts/BLOODY.TTF" id="2_45od6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ioddx"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -19,33 +21,6 @@ sdfgi_enabled = true
 glow_enabled = true
 volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0, 0, 0, 1)
-
-[sub_resource type="Animation" id="Animation_ioddx"]
-resource_name = "jumpscare"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera3D:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 2.1447875), Vector3(0, 0, 1.79953)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera3D:rotation")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.26666668, 0.68, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, -0.2814169), Vector3(0, 0, 0.24502806), Vector3(0, 0, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_45od6"]
 length = 0.001
@@ -74,6 +49,33 @@ tracks/1/keys = {
 "values": [Vector3(0, 0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_ioddx"]
+resource_name = "jumpscare"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 2.1447875), Vector3(0, 0, 1.79953)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.68, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -0.2814169), Vector3(0, 0, 0.24502806), Vector3(0, 0, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gni6d"]
 _data = {
 &"RESET": SubResource("Animation_45od6"),
@@ -81,6 +83,7 @@ _data = {
 }
 
 [node name="jumpscare" type="Node3D"]
+script = ExtResource("1_gni6d")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_gni6d")
@@ -108,3 +111,53 @@ light_color = Color(0.4480065, 0.4768229, 1, 1)
 [node name="SpotLight3D3" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.04011441, -0.9991951, 0, 0.9991951, -0.04011441, 0.81028926, -3.457138, 2.7915933)
 light_color = Color(0.94509804, 0, 0.1882353, 1)
+
+[node name="Options" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="Options"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="Options/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98039216, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_45od6")
+theme_override_font_sizes/font_size = 96
+text = "You Died!"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ContinueButton" type="Button" parent="Options/CenterContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="BackToMenuButton" type="Button" parent="Options/CenterContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back to Menu"
+
+[node name="MenuTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="pressed" from="Options/CenterContainer/VBoxContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="Options/CenterContainer/VBoxContainer/VBoxContainer/BackToMenuButton" to="." method="_on_back_to_menu_button_pressed"]
+[connection signal="timeout" from="MenuTimer" to="." method="_on_menu_timer_timeout"]
