@@ -39,6 +39,11 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 5
 
+[node name="ContinueButton" type="Button" parent="CenterContainer/VBoxContainer/MainLinks"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+text = "Continue"
+
 [node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer/MainLinks"]
 custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
@@ -61,6 +66,7 @@ layout_mode = 2
 text = "Quit
 "
 
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/CreditsButton" to="." method="_on_credits_button_pressed"]
