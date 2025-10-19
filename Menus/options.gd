@@ -47,3 +47,6 @@ func _on_back_to_menu_button_pressed() -> void:
 
 func _on_sensetivity_slider_value_changed(value: float) -> void:
 	Gamestate.mouse_sensetivity = value
+
+func _on_sound_slider_drag_ended(value_changed: bool) -> void:
+	AudioManager.play_test_sound()

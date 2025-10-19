@@ -3,4 +3,5 @@
 [ext_resource type="Script" uid="uid://gxcchx1vmkxf" path="res://Globals/gamestate.gd" id="1_cet13"]
 
 [node name="Gamestate" type="Node"]
+process_mode = 3
 script = ExtResource("1_cet13")
