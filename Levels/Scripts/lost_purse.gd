@@ -31,6 +31,7 @@ func interact() -> void:
 	get_tree().call_group("TV", "tv_noise", true, 2)
 	get_tree().call_group("HUD", "update_communication_container", "You:", "OK, why not. But please hurry up.")
 	await get_tree().create_timer(wait_time).timeout
+	get_tree().call_group("Purse", "queue_free")
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Thank you alot. Come to the window, I'm there right now!")
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("BurgerPlace", "add_drive_trough_task")
