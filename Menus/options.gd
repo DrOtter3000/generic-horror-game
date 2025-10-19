@@ -5,6 +5,7 @@ var is_in_main_menu := false
 
 @onready var sound_slider: HSlider = $CenterContainer/VBoxContainer/VBoxContainer/SoundSlider
 @onready var back_to_menu_button: Button = $CenterContainer/VBoxContainer/BackToMenuButton
+@onready var sensetivity_slider: HSlider = $CenterContainer/VBoxContainer/VBoxContainer2/SensetivitySlider
 
 
 func _ready() -> void:
@@ -16,6 +17,8 @@ func _ready() -> void:
 		back_to_menu_button.show()
 	else:
 		back_to_menu_button.hide()
+	sensetivity_slider.value = Gamestate.mouse_sensetivity
+
 
 func  _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
@@ -41,3 +44,6 @@ func _on_back_button_pressed() -> void:
 func _on_back_to_menu_button_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://Menus/main_menu.tscn")
+
+func _on_sensetivity_slider_value_changed(value: float) -> void:
+	Gamestate.mouse_sensetivity = value
