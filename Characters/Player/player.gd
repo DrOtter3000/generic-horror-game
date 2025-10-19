@@ -16,6 +16,7 @@ var working := false
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var finish_yourjob_label: Label = $HUD/FinishYourjobLabel
 @onready var finish_job_timer: Timer = $HUD/FinishJobTimer
+@onready var flashlight: SpotLight3D = $Camera3D/Flashlight
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -31,12 +32,19 @@ var footstep_sounds := [
 ]
 
 func _ready() -> void:
+	flashlight.light_energy = 0
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	fade_in()
 
 func _physics_process(delta: float) -> void:
 	if working:
 		return
+	
+	if Input.is_action_just_pressed("flashlight"):
+		if flashlight.light_energy == 0.0:
+			flashlight.light_energy = 1.0
+		else:
+			flashlight.light_energy = 0.0
 	
 	### Steps ###
 	if !is_on_floor():

@@ -88,6 +88,13 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
+[node name="Flashlight" type="SpotLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21663713, -0.5181049)
+light_color = Color(1, 1, 0.93333334, 1)
+shadow_enabled = true
+spot_range = 11.559529
+spot_angle = 43.79335
+
 [node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
 script = ExtResource("2_j341n")
 

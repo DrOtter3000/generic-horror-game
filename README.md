@@ -5,8 +5,8 @@ This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam
 ## Controls
 - Movement: WASD
 - Interact: E
-- Jump: Spacebar
 - Crouch: Left STRG
+- Flashlight: F
 
 ## External Sources
 ### Graphics 
