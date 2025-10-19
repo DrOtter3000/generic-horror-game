@@ -1,7 +1,7 @@
 class_name Player
 extends CharacterBody3D
 
-const SPEED = 5.0
+const SPEED = 4.0
 const JUMP_VELOCITY = 4.5
 
 @export var mouse_sensetivity := .08
@@ -59,9 +59,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		camera_3d.position.y = lerp(camera_3d.position.y, normal_camera_position, 0.1)
 	
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	## Handle jump.
+	#if Input.is_action_just_pressed("jump") and is_on_floor():
+		#velocity.y = JUMP_VELOCITY
 	
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
