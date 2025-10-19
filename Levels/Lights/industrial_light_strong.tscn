@@ -1,4 +1,6 @@
 [gd_scene format=3 uid="uid://cm03u4ok5d43h"]
 
 [node name="IndustrialLightStrong" type="OmniLight3D"]
-omni_range = 8.0
+light_color = Color(0.9886158, 0.9999903, 0.8238604, 1)
+light_energy = 1.2
+omni_range = 10.0
