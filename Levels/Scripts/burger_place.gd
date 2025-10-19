@@ -24,3 +24,7 @@ func spawn_creature() -> void:
 	creature_instance.position = creature_position.position
 	creature_instance.rotation = creature_position.rotation
 	creature_instance.scale = Vector3(0.3, 0.3, 0.3)
+
+func turn_off_tv() -> void:
+	await get_tree().create_timer(10.0).timeout
+	get_tree().call_group("TV", "tv_noise", false, 2)

@@ -147,6 +147,7 @@ theme_override_constants/margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HUD/CommunicationContainer/MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="NameLabel" type="Label" parent="HUD/CommunicationContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2

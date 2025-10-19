@@ -6,12 +6,9 @@ extends MeshInstance3D
 
 
 func tv_noise(status: bool, material_pos: int) -> void:
-	print("switch noise")
 	if status == false:
-		print("noise off")
 		set_surface_override_material(2, material_off)
 		static_audio_player.stop()
 	else:
-		print("Noise on")
 		set_surface_override_material(material_pos, material_on)
 		static_audio_player.play()

@@ -1,6 +1,6 @@
 extends task_interactor
 
-var wait_time := .1
+var wait_time := 4.0
 var creature: Creature
 
 func _ready() -> void:
@@ -12,23 +12,24 @@ func interact() -> void:
 	player.change_working_status(true)
 	get_tree().call_group("Window", "open_window", true)
 	get_tree().call_group("HUD", "deactivate_interaction_label", true)
-	get_tree().call_group("HUD", "update_communication_container", "Creature", "Hi, I'm here to pick up my purse")
+	get_tree().call_group("HUD", "update_communication_container", "Creature:", "Hi, I'm here to pick up my purse.")
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "You:", "W-w-what the hell is going on?")
 	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "Creature", "Sorry for my weird look. Some people say, I would scare them")
+	get_tree().call_group("HUD", "update_communication_container", "Creature:", "Sorry for my weird look. Some people say, I would scare them.")
 	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "You:", "OK, here is your purse")
+	get_tree().call_group("HUD", "update_communication_container", "You:", "OK, here is your purse.")
+	await get_tree().create_timer(wait_time/2).timeout
+	get_tree().call_group("HUD", "update_communication_container", "Creature:", "Thank you. Oh, one more question. What is your perfume? It smells... tasty.")
 	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "Creature", "Thank you. Oh, one more question. What is your perfume? It smells... tasty")
+	get_tree().call_group("HUD", "update_communication_container", "You:", "I don't use perfume.")
+	await get_tree().create_timer(wait_time/2).timeout
+	get_tree().call_group("HUD", "update_communication_container", "Creature:", "Oh... then I have to leave. Fast... you smell tasty. See you.")
 	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "You:", "I don't use perfume")
-	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "Creature:", "Oh... then I have to leave. Fast... you smell tasty. See you")
-	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "You:", "See you")
-	await get_tree().create_timer(wait_time).timeout
+	get_tree().call_group("HUD", "update_communication_container", "You:", "See you.")
+	await get_tree().create_timer(wait_time/2).timeout
 	creature.leave_window()
 	get_tree().call_group("Window", "open_window", false)
 	get_tree().call_group("HUD", "deactivate_interaction_label", false)
+	get_tree().call_group("BurgerPlace", "turn_off_tv")
 	player.change_working_status(false)

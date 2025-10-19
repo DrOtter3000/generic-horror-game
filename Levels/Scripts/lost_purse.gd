@@ -6,7 +6,7 @@ extends task_interactor
 @onready var pick_up_phone_sound = preload("res://Audio/SFX/PickUpPhone.wav")
 @onready var hang_up_phone_sound = preload("res://Audio/SFX/HangUpPhone.wav")
 
-var wait_time := .1
+var wait_time := 5.0
 
 func interact() -> void:
 	super()
@@ -17,10 +17,10 @@ func interact() -> void:
 	phone_sound.play()
 	get_tree().call_group("HUD", "deactivate_interaction_label", true)
 	get_tree().call_group("HUD", "update_communication_container", "You:", "Yes, Hello?")
-	await get_tree().create_timer(wait_time).timeout
+	await get_tree().create_timer(wait_time/2).timeout
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Hey, am I right at BurgerPlace?")
 	await get_tree().create_timer(wait_time).timeout
-	get_tree().call_group("HUD", "update_communication_container", "You:", "Yes, but this place is closed, I'm just the janitor.")
+	get_tree().call_group("HUD", "update_communication_container", "You:", "Yes, but this place is closed, I'm the janitor.")
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Oh, I don't want to order anything. I lost my purse, it is red. Can you have a look if one has found it?")
 	await get_tree().create_timer(wait_time).timeout
@@ -28,6 +28,7 @@ func interact() -> void:
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Can I pick it up right now? I'm next to the drive trough in a few seconds.")
 	await get_tree().create_timer(wait_time).timeout
+	get_tree().call_group("TV", "tv_noise", true, 2)
 	get_tree().call_group("HUD", "update_communication_container", "You:", "OK, why not. But please hurry up.")
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "???:", "Thank you alot. Come to the window, I'm there right now!")
