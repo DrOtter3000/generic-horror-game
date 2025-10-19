@@ -14,6 +14,8 @@ var working := false
 @onready var interaction_label: Label = $HUD/InteractionLabel
 @onready var tasks: VBoxContainer = $HUD/Taskscontainer/Tasks
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var finish_yourjob_label: Label = $HUD/FinishYourjobLabel
+@onready var finish_job_timer: Timer = $HUD/FinishJobTimer
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -110,3 +112,11 @@ func fade_in() -> void:
 
 func fade_out() -> void:
 	animation_player.play("fade_out")
+
+func show_finish_your_job_label() -> void:
+	finish_yourjob_label.show()
+	finish_job_timer.stop()
+	finish_job_timer.start()
+
+func _on_finish_job_timer_timeout() -> void:
+	finish_yourjob_label.hide()

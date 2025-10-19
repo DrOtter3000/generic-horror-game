@@ -12,7 +12,7 @@ func interact() -> void:
 		switch_scene()
 	else:
 		#TODO: Add other behaviour
-		print("do your stuffs")
+		get_tree().call_group("Player", "show_finish_your_job_label")
 
 func switch_scene() -> void:
 	AudioManager.car_start_audio_player.play()
