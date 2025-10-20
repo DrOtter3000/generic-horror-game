@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody3D
 
+# TODO: Add hammer to camera
+
 const SPEED = 4.0
 const JUMP_VELOCITY = 4.5
 
@@ -18,6 +20,8 @@ var working := false
 @onready var fade_player: AnimationPlayer = $FadePlayer
 @onready var hud: CanvasLayer = $HUD
 @onready var options = preload("res://Menus/options.tscn")
+@onready var repair_player: AnimationPlayer = $RepairPlayer
+@onready var hammer: Node3D = $hammer
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -33,6 +37,7 @@ var footstep_sounds := [
 ]
 
 func _ready() -> void:
+	hammer.hide()
 	working = true
 	hud_visible(false)
 	flashlight.light_energy = 0
@@ -142,3 +147,11 @@ func hud_visible(status: bool) -> void:
 		hud.show()
 	else:
 		hud.hide()
+
+func repair_player_play(status: bool) -> void:
+	if status == true:
+		repair_player.play("repair")
+		hammer.show()
+	else:
+		repair_player.stop()
+		hammer.hide()

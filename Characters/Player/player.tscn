@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://saebmpkl5tr2"]
+[gd_scene load_steps=13 format=3 uid="uid://saebmpkl5tr2"]
 
 [ext_resource type="Script" uid="uid://bdhp6yf5h6hms" path="res://Characters/Player/player.gd" id="1_6xdwp"]
 [ext_resource type="Script" uid="uid://bjmgeikc7n6xo" path="res://Characters/Player/hud.gd" id="2_j341n"]
+[ext_resource type="PackedScene" uid="uid://b7l03do0odune" path="res://Assets/hammer.fbx" id="3_cue0d"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_kww3p"]
 radius = 0.3
@@ -117,6 +118,68 @@ _data = {
 &"RESET": SubResource("Animation_cue0d"),
 &"fade_in": SubResource("Animation_6xdwp"),
 &"fade_out": SubResource("Animation_j341n")
+}
+
+[sub_resource type="Animation" id="Animation_bqsbk"]
+resource_name = "repair"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hammer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.35604334, 0.9445282, -0.5531101), Vector3(0.35604334, 0.9445282, -0.49572027), Vector3(0.35604334, 0.9445282, -0.5531101)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hammer:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.20895359, -1.6049803, -0.1633872), Vector3(0.1821212, -1.6793114, -0.54152834), Vector3(0.20895359, -1.6049803, -0.1633872)]
+}
+
+[sub_resource type="Animation" id="Animation_xf5fp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hammer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.35604334, 0.9445282, -0.5531101)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hammer:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.20895359, -1.6049803, -0.1633872)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_osktb"]
+_data = {
+&"RESET": SubResource("Animation_xf5fp"),
+&"repair": SubResource("Animation_bqsbk")
 }
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
@@ -254,8 +317,16 @@ libraries = {
 }
 autoplay = "fade_in"
 
+[node name="RepairPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_osktb")
+}
+
 [node name="StepPlayer" type="AudioStreamPlayer3D" parent="."]
 volume_db = -5.0
 bus = &"SFX"
+
+[node name="hammer" parent="." instance=ExtResource("3_cue0d")]
+transform = Transform3D(-5.215406e-09, -0.021011349, -0.09776769, -0.01591231, 0.096522026, -0.020743635, 0.09872586, 0.015557097, -0.0033433954, 0.35604334, 0.9445282, -0.5531101)
 
 [connection signal="timeout" from="HUD/FinishJobTimer" to="." method="_on_finish_job_timer_timeout"]
