@@ -5,6 +5,7 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.horror_ambient_player.play()
 	if Gamestate.played_through:
 		continue_button.show()
 	else:
