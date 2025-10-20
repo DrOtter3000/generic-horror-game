@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cyqami4ya0bmw"]
+[gd_scene load_steps=4 format=3 uid="uid://cyqami4ya0bmw"]
 
 [ext_resource type="Script" uid="uid://bklg0cntdx0cn" path="res://Menus/main_menu.gd" id="1_jf8mj"]
+[ext_resource type="Texture2D" uid="uid://bk8o0dvgjth5r" path="res://Assets/Pictures/bw_burgers.png" id="2_at0u2"]
 [ext_resource type="FontFile" uid="uid://b3ki50kq67pup" path="res://Themes/Fonts/BLOODY.TTF" id="2_p3jrs"]
 
 [node name="MainMenu" type="Control"]
@@ -11,6 +12,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jf8mj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_at0u2")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1

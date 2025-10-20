@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://yg1qbtgdc7f1"]
+[gd_scene load_steps=3 format=3 uid="uid://yg1qbtgdc7f1"]
 
 [ext_resource type="Script" uid="uid://bsb0tb63gp4is" path="res://Menus/credits.gd" id="1_edkqf"]
+[ext_resource type="Texture2D" uid="uid://bk8o0dvgjth5r" path="res://Assets/Pictures/bw_burgers.png" id="2_yccri"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -10,6 +11,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_edkqf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_yccri")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,7 +33,7 @@ theme_override_constants/margin_bottom = 50
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 15
+theme_override_constants/separation = 25
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -44,6 +52,7 @@ layout_mode = 2
 theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "PSX Style Graphics"
@@ -58,6 +67,7 @@ layout_mode = 2
 theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "Static Noise Shader"
@@ -66,6 +76,21 @@ text = "Static Noise Shader"
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "KnightNine"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Other"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "DrOtter3000"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -80,6 +105,7 @@ layout_mode = 2
 theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "SFX"
@@ -94,6 +120,7 @@ layout_mode = 2
 theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "SFX"
@@ -102,6 +129,112 @@ text = "SFX"
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "soundjay.com"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Else:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer4/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Code"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer4/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "DrOtter3000"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer4/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Idea"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer4/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "DrOtter3000"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Software:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Game Engine"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Godot 4.5"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "SFX"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Audacity"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer3"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Graphics 2D"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "GIMP"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer4"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Graphics 3D"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer3/HBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Blender"
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -126,7 +259,7 @@ theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
 [node name="BackButton" type="Button" parent="MarginContainer2"]
-custom_minimum_size = Vector2(250, 30)
+custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
 text = "Back"
 
