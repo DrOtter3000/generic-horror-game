@@ -19,7 +19,7 @@ func _on_options_button_pressed() -> void:
 	options_instance.is_in_main_menu = true
 
 func _on_credits_button_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Menus/credits.tscn")
 
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()
