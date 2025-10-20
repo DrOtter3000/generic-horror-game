@@ -130,6 +130,21 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "soundjay.com"
 
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer3"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Ambient"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "N91music"
+
 [node name="VBoxContainer4" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 

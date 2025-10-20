@@ -16,6 +16,7 @@ This is a game, made for the [GameDev.tv Halloween game jam](https://itch.io/jam
 ### Sounds
 - [freesoundlibrary.com](https://www.freesoundslibrary.com)
 - [soundjay.com](https://www.soundjay.com)
+- [n91music](https://n91music.itch.io/)
 
 ## Technologies
 - [Godot 4.5](https://godotengine.org/)
