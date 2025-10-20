@@ -1,5 +1,7 @@
 extends Control
 
+func _ready() -> void:
+	AudioManager.horror_ambient_player.stop()
 
 func _on_timer_timeout() -> void:
 	Gamestate.played_through = true
