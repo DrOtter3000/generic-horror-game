@@ -93,7 +93,7 @@ theme_override_constants/margin_bottom = 25
 [node name="VersionLabel" type="Label" parent="MarginContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
-text = "Version 0.1.0"
+text = "Version 0.1.1"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/PlayButton" to="." method="_on_play_button_pressed"]

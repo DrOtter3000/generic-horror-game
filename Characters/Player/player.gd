@@ -59,8 +59,8 @@ func _physics_process(delta: float) -> void:
 		else:
 			flashlight.light_energy = 0.0
 	
-	if Input.is_action_just_pressed("jump"):
-		hud.hide()
+	#if Input.is_action_just_pressed("jump"):
+		#hud.hide()
 	
 	### Steps ###
 	if !is_on_floor():
