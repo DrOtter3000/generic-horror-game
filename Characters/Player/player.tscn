@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://saebmpkl5tr2"]
+[gd_scene load_steps=14 format=3 uid="uid://saebmpkl5tr2"]
 
 [ext_resource type="Script" uid="uid://bdhp6yf5h6hms" path="res://Characters/Player/player.gd" id="1_6xdwp"]
 [ext_resource type="Script" uid="uid://bjmgeikc7n6xo" path="res://Characters/Player/hud.gd" id="2_j341n"]
+[ext_resource type="AudioStream" uid="uid://do5m4t7gfboc5" path="res://Audio/SFX/hammer-sound.wav" id="3_bqsbk"]
 [ext_resource type="PackedScene" uid="uid://b7l03do0odune" path="res://Assets/hammer.fbx" id="3_cue0d"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_kww3p"]
@@ -120,6 +121,33 @@ _data = {
 &"fade_out": SubResource("Animation_j341n")
 }
 
+[sub_resource type="Animation" id="Animation_xf5fp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D/hammer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.35604334, -0.58580315, -0.5531101)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D/hammer:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.20895357, -1.6049803, -0.16338721)]
+}
+
 [sub_resource type="Animation" id="Animation_bqsbk"]
 resource_name = "repair"
 length = 0.3
@@ -127,53 +155,40 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("hammer:position")
+tracks/0/path = NodePath("Camera3D/hammer:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.13333334, 0.3),
+"times": PackedFloat32Array(0, 0.099920094, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0.35604334, 0.9445282, -0.5531101), Vector3(0.35604334, 0.9445282, -0.49572027), Vector3(0.35604334, 0.9445282, -0.5531101)]
+"values": [Vector3(0.35604334, -0.58580315, -0.5531101), Vector3(0.35604334, -0.58580315, -0.8036252), Vector3(0.35604334, -0.58580315, -0.5531101)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("hammer:rotation")
+tracks/1/path = NodePath("Camera3D/hammer:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.13333334, 0.3),
+"times": PackedFloat32Array(0, 0.099920094, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0.20895359, -1.6049803, -0.1633872), Vector3(0.1821212, -1.6793114, -0.54152834), Vector3(0.20895359, -1.6049803, -0.1633872)]
+"values": [Vector3(0.20895357, -1.6049803, -0.16338721), Vector3(0.19723094, -1.4933952, 0.3768685), Vector3(0.20895357, -1.6049803, -0.16338721)]
 }
-
-[sub_resource type="Animation" id="Animation_xf5fp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("hammer:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.35604334, 0.9445282, -0.5531101)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("hammer:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.20895359, -1.6049803, -0.1633872)]
+"values": [{
+"args": [],
+"method": &"play_hammer_sound"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_osktb"]
@@ -196,6 +211,7 @@ shape = SubResource("CapsuleShape3D_vyvq2")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+cull_mask = 1047553
 
 [node name="InteractionRaycast" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -1.5)
@@ -215,6 +231,36 @@ light_color = Color(1, 1, 0.93333334, 1)
 shadow_enabled = true
 spot_range = 11.559529
 spot_angle = 43.79335
+
+[node name="hammer" parent="Camera3D" instance=ExtResource("3_cue0d")]
+transform = Transform3D(-5.215405e-09, -0.02101135, -0.09776768, -0.015912306, 0.09652204, -0.02074363, 0.09872585, 0.015557101, -0.0033433952, 0.35604334, -0.58580315, -0.5531101)
+
+[node name="HammerSound" type="AudioStreamPlayer3D" parent="Camera3D/hammer"]
+transform = Transform3D(-5.820768e-07, -1.5912313, 9.87259, -2.1011343, 9.652201, 1.5557095, -9.7767725, -2.074364, -0.33433965, 7.0744514, -8.180658, 5.399842)
+stream = ExtResource("3_bqsbk")
+volume_db = -6.0
+bus = &"SFX"
+
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="Camera3D"]
+remote_path = NodePath("../../SubViewportContainer/SubViewport/Camera3D")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+cull_mask = 2
 
 [node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
 script = ExtResource("2_j341n")
@@ -325,8 +371,5 @@ libraries = {
 [node name="StepPlayer" type="AudioStreamPlayer3D" parent="."]
 volume_db = -5.0
 bus = &"SFX"
-
-[node name="hammer" parent="." instance=ExtResource("3_cue0d")]
-transform = Transform3D(-5.215406e-09, -0.021011349, -0.09776769, -0.01591231, 0.096522026, -0.020743635, 0.09872586, 0.015557097, -0.0033433954, 0.35604334, 0.9445282, -0.5531101)
 
 [connection signal="timeout" from="HUD/FinishJobTimer" to="." method="_on_finish_job_timer_timeout"]

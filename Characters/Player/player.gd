@@ -21,7 +21,8 @@ var working := false
 @onready var hud: CanvasLayer = $HUD
 @onready var options = preload("res://Menus/options.tscn")
 @onready var repair_player: AnimationPlayer = $RepairPlayer
-@onready var hammer: Node3D = $hammer
+@onready var hammer: Node3D = $Camera3D/hammer
+@onready var hammer_sound: AudioStreamPlayer3D = $Camera3D/hammer/HammerSound
 
 ### Steps ###
 @export var step_after_dist := 2.5
@@ -158,3 +159,7 @@ func repair_player_play(status: bool) -> void:
 	else:
 		repair_player.stop()
 		hammer.hide()
+
+func play_hammer_sound() -> void:
+	hammer_sound.pitch_scale = randf_range(0.7, 1.3)
+	hammer_sound.play()
