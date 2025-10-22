@@ -62,6 +62,11 @@ custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
 text = "Options"
 
+[node name="ControlsButton" type="Button" parent="CenterContainer/VBoxContainer/MainLinks"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+text = "Controls"
+
 [node name="CreditsButton" type="Button" parent="CenterContainer/VBoxContainer/MainLinks"]
 custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
@@ -98,5 +103,6 @@ text = "Version 0.1.1"
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/ControlsButton" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/MainLinks/QuitButton" to="." method="_on_quit_button_pressed"]

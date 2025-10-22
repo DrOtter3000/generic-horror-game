@@ -27,3 +27,6 @@ func _on_quit_button_pressed() -> void:
 
 func _on_continue_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Levels/home.tscn")
+
+func _on_controls_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Menus/controls.tscn")
