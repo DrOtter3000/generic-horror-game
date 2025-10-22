@@ -49,7 +49,8 @@ func _on_sensetivity_slider_value_changed(value: float) -> void:
 	Gamestate.mouse_sensetivity = value
 
 func _on_sound_slider_drag_ended(value_changed: bool) -> void:
-	AudioManager.play_test_sound()
+	if value_changed:
+		AudioManager.play_test_sound()
 
 func _on_fullscreen_button_pressed() -> void:
 	if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_WINDOWED:
