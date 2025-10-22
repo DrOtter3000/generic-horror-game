@@ -43533,12 +43533,12 @@ libraries = {
 transform = Transform3D(0.94198924, 0.20529057, 0.2655411, -0.09259882, 0.9193892, -0.3822944, -0.3226171, 0.33552834, 0.8850643, 8.369031, 2.7635255, -18.447186)
 
 [node name="CreaturePosition" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028518677, -0.023950577, 30.280827)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.253946, -0.023950577, -10.283013)
 visible = false
 script = ExtResource("76_e4hsr")
 
 [node name="Creature" parent="CreaturePosition" instance=ExtResource("76_t1m76")]
-transform = Transform3D(-0.0006963855, 0, 0.2999992, 0, 0.3, 0, -0.2999992, 0, -0.0006963855, 0, 0, 0)
+transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.30000004, 0, -0.3, 0, -1.3113417e-08, 0, 0, 0)
 script = null
 
 [node name="Lights" type="Node3D" parent="."]
