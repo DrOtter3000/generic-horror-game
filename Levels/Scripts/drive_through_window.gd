@@ -1,6 +1,6 @@
 extends task_interactor
 
-var wait_time := 4.0
+var wait_time := .1
 var creature: Creature
 
 func _ready() -> void:
@@ -33,3 +33,4 @@ func interact() -> void:
 	get_tree().call_group("HUD", "deactivate_interaction_label", false)
 	get_tree().call_group("BurgerPlace", "turn_off_tv")
 	player.change_working_status(false)
+	queue_free()
