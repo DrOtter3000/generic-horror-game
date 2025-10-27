@@ -51,6 +51,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_gorid")
 autoplay = "Idle"
 
 [node name="BreathPlayer" type="AudioStreamPlayer3D" parent="." index="2"]
+volume_db = -3.0
+unit_size = 1.0
+max_db = -3.0
+bus = &"SFX"
 
 [node name="Timer" type="Timer" parent="." index="3"]
 wait_time = 2.917

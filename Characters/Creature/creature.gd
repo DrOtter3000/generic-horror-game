@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
 
 func play_breath_sound() -> void:
 	breath_player.stream = breath_sound_array.pick_random()
+	breath_player.pitch_scale = randf_range(0.9, 1.1)
 	breath_player.play()
 
 func _on_timer_timeout() -> void:
