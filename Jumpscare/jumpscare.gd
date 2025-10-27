@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var options: CanvasLayer = $Options
+@onready var options: Control = $Options
 
 
 func _ready() -> void:

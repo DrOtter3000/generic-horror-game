@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://saebmpkl5tr2"]
+[gd_scene load_steps=15 format=3 uid="uid://saebmpkl5tr2"]
 
 [ext_resource type="Script" uid="uid://bdhp6yf5h6hms" path="res://Characters/Player/player.gd" id="1_6xdwp"]
 [ext_resource type="Script" uid="uid://bjmgeikc7n6xo" path="res://Characters/Player/hud.gd" id="2_j341n"]
+[ext_resource type="PackedScene" uid="uid://e8x58obi60ci" path="res://Menus/noise_effect.tscn" id="2_xf5fp"]
 [ext_resource type="AudioStream" uid="uid://do5m4t7gfboc5" path="res://Audio/SFX/hammer-sound.wav" id="3_bqsbk"]
 [ext_resource type="PackedScene" uid="uid://b7l03do0odune" path="res://Assets/hammer.fbx" id="3_cue0d"]
 
@@ -200,6 +201,8 @@ _data = {
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_6xdwp")
 
+[node name="NoiseEffect" parent="." instance=ExtResource("2_xf5fp")]
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 cast_shadow = 0
@@ -233,7 +236,7 @@ spot_range = 11.559529
 spot_angle = 43.79335
 
 [node name="hammer" parent="Camera3D" instance=ExtResource("3_cue0d")]
-transform = Transform3D(-5.215405e-09, -0.02101135, -0.09776768, -0.015912306, 0.09652204, -0.02074363, 0.09872585, 0.015557101, -0.0033433952, 0.35604334, -0.58580315, -0.5531101)
+transform = Transform3D(-5.215405e-09, -0.02101135, -0.09776768, -0.015912306, 0.09652204, -0.02074363, 0.09872585, 0.015557102, -0.0033433952, 0.35604334, -0.58580315, -0.5531101)
 
 [node name="HammerSound" type="AudioStreamPlayer3D" parent="Camera3D/hammer"]
 transform = Transform3D(-5.820768e-07, -1.5912313, 9.87259, -2.1011343, 9.652201, 1.5557095, -9.7767725, -2.074364, -0.33433965, 7.0744514, -8.180658, 5.399842)
@@ -262,10 +265,17 @@ render_target_update_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 cull_mask = 2
 
-[node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
+[node name="HUD" type="Control" parent="." groups=["HUD"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("2_j341n")
 
 [node name="InteractionLabel" type="Label" parent="HUD"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -286,6 +296,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Taskscontainer" type="MarginContainer" parent="HUD"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 10
@@ -296,6 +307,7 @@ layout_mode = 2
 
 [node name="CommunicationContainer" type="MarginContainer" parent="HUD"]
 visible = false
+layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -335,6 +347,7 @@ autowrap_mode = 3
 
 [node name="FinishYourjobLabel" type="Label" parent="HUD"]
 visible = false
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

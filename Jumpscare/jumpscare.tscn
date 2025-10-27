@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://c33sr5ed3kxc0"]
+[gd_scene load_steps=12 format=3 uid="uid://c33sr5ed3kxc0"]
 
 [ext_resource type="Script" uid="uid://brnkdtpbjbcdx" path="res://Jumpscare/jumpscare.gd" id="1_gni6d"]
 [ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="1_ioddx"]
 [ext_resource type="FontFile" uid="uid://b3ki50kq67pup" path="res://Themes/Fonts/BLOODY.TTF" id="2_45od6"]
+[ext_resource type="PackedScene" uid="uid://e8x58obi60ci" path="res://Menus/noise_effect.tscn" id="2_kgwyf"]
 [ext_resource type="AudioStream" uid="uid://58qxtsq7im51" path="res://Audio/SFX/rake-jumpscare-sound-effect.mp3" id="4_rxst3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ioddx"]
@@ -86,6 +87,8 @@ _data = {
 [node name="jumpscare" type="Node3D"]
 script = ExtResource("1_gni6d")
 
+[node name="CanvasLayer" parent="." instance=ExtResource("2_kgwyf")]
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_gni6d")
 
@@ -113,10 +116,16 @@ light_color = Color(0.4480065, 0.4768229, 1, 1)
 transform = Transform3D(1, 0, 0, 0, -0.04011441, -0.9991951, 0, 0.9991951, -0.04011441, 0.81028926, -3.457138, 2.7915933)
 light_color = Color(0.94509804, 0, 0.1882353, 1)
 
-[node name="Options" type="CanvasLayer" parent="."]
-visible = false
+[node name="Options" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="Options"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

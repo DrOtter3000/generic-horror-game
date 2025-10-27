@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://yg1qbtgdc7f1"]
+[gd_scene load_steps=4 format=3 uid="uid://yg1qbtgdc7f1"]
 
 [ext_resource type="Script" uid="uid://bsb0tb63gp4is" path="res://Menus/credits.gd" id="1_edkqf"]
+[ext_resource type="PackedScene" uid="uid://e8x58obi60ci" path="res://Menus/noise_effect.tscn" id="2_utxdh"]
 [ext_resource type="Texture2D" uid="uid://bk8o0dvgjth5r" path="res://Assets/Pictures/bw_burgers.png" id="2_yccri"]
 
 [node name="Credits" type="Control"]
@@ -11,6 +12,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_edkqf")
+
+[node name="NoiseEffect" parent="." instance=ExtResource("2_utxdh")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(0.288518, 0.28851798, 0.28851798, 1)
@@ -79,6 +82,21 @@ text = "Static Noise Shader"
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "KnightNine"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "VHS CRT Shader"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "A7meD"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2

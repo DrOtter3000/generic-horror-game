@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Control
 
 @onready var interaction_label: Label = $InteractionLabel
 @onready var communication_container: MarginContainer = $CommunicationContainer
