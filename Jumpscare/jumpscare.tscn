@@ -97,6 +97,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1447875)
 
 [node name="Creature" parent="." instance=ExtResource("1_ioddx")]
 transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.29999998, 0, 0.3, 0, -1.3113417e-08, 0, -1.8095814, -0.1157037)
+breathing = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
