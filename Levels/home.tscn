@@ -1,4 +1,4 @@
-[gd_scene load_steps=2493 format=4 uid="uid://cklo5iea70jhj"]
+[gd_scene load_steps=2494 format=4 uid="uid://cklo5iea70jhj"]
 
 [ext_resource type="Script" uid="uid://c4gp1wmpysoa" path="res://Levels/Scripts/home.gd" id="1_1fcrk"]
 [ext_resource type="Texture2D" uid="uid://bdqohj1l3v21k" path="res://Assets/House/Textures/AsphaltDamaged.jpg" id="1_wbyfx"]
@@ -155,6 +155,7 @@
 [ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="150_smc25"]
 [ext_resource type="PackedScene" uid="uid://cknpiknhruscn" path="res://Levels/Lights/light_house.tscn" id="155_xk30g"]
 [ext_resource type="PackedScene" uid="uid://defhnt3i4rei8" path="res://Levels/Lights/light_street.tscn" id="156_tuh21"]
+[ext_resource type="AudioStream" uid="uid://ta11e4oer3m1" path="res://Audio/SFX/snore-sound-effect.mp3" id="157_1fcrk"]
 [ext_resource type="Script" uid="uid://bwqlajqkr5qk5" path="res://Levels/Scripts/danger_zone.gd" id="158_ekqis"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lreq1"]
@@ -55250,5 +55251,9 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -50.
 
 [node name="LightStreet4" parent="Lights" instance=ExtResource("156_tuh21")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -50.67152, 7.6675086, 36.789185)
+
+[node name="SnoreSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("157_1fcrk")
+volume_db = -3.0
 
 [connection signal="finished" from="UseToiletWithCereals/ToiletSound" to="UseToiletWithCereals" method="_on_toilet_sound_finished"]
