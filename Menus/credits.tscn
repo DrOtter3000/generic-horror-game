@@ -166,6 +166,51 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "N91music"
 
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer4"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Ambient"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Geri92"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer5"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Ambient"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "pagancow"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer6"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Ambient"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer6"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "DrOtter3000"
+
 [node name="VBoxContainer4" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 

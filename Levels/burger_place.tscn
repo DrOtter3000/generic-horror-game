@@ -28331,6 +28331,7 @@ shape = SubResource("ConcavePolygonShape3D_k00jn")
 [node name="Door" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(-6.6761822e-06, -152.73325, -6.6761813e-06, 0, -6.6761822e-06, 152.73323, -152.73325, 6.6761822e-06, 2.9182516e-13, 5.6742115, 1.3120311, -3.9689574)
 script = ExtResource("23_clh1d")
+is_metal = true
 
 [node name="Door" type="MeshInstance3D" parent="BurgerPiz/Door"]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
@@ -28351,9 +28352,13 @@ libraries = {
 &"": SubResource("AnimationLibrary_njr75")
 }
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
+
 [node name="Door_01" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(-152.73325, 5.947652e-05, 2.599801e-12, 0, -6.6761822e-06, 152.73323, 5.947652e-05, 152.73325, 6.6761813e-06, -3.9139385, 1.3120311, -3.5402005)
 script = ExtResource("23_clh1d")
+is_metal = true
 
 [node name="Door_01" type="MeshInstance3D" parent="BurgerPiz/Door_01"]
 transform = Transform3D(0.99999994, 2.842171e-14, -3.3881318e-21, -2.842171e-14, 0.99999994, 0, 1.6940659e-21, 0, 0.99999994, 0, 0, 0)
@@ -28374,9 +28379,13 @@ libraries = {
 transform = Transform3D(0.9999999, 2.9473313e-11, 0, -2.9473313e-11, 0.9999999, 3.5527137e-15, 1.7567463e-18, -3.5527137e-15, 0.99999994, 0.00037289783, 0.0031128582, -9.154808e-05)
 shape = SubResource("BoxShape3D_3ufcq")
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_01"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
+
 [node name="Door_C" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(-152.73323, -2.3062077e-05, -1.0080754e-12, 0, -6.6761813e-06, 152.73323, -2.3062077e-05, 152.73323, 6.6761813e-06, 3.7574277, 1.3208818, 1.0363965)
 script = ExtResource("23_clh1d")
+is_metal = true
 
 [node name="Door_C" type="MeshInstance3D" parent="BurgerPiz/Door_C"]
 transform = Transform3D(0.99999994, 2.842171e-14, -3.3881318e-21, -2.842171e-14, 0.99999994, 0, 1.6940659e-21, 0, 0.99999994, 0, 0, 0)
@@ -28397,6 +28406,9 @@ shape = SubResource("BoxShape3D_u25vl")
 libraries = {
 &"": SubResource("AnimationLibrary_xdxhs")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_C"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
 
 [node name="Door_F" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(-4.2668676e-06, -100, -4.371139e-06, 0, -4.371139e-06, 100, -97.61455, 4.371139e-06, 1.9106854e-13, 8.857, 1.2615561, 11.913833)
@@ -28422,6 +28434,9 @@ libraries = {
 transform = Transform3D(0.9999998, 0, 0, 3.5527137e-15, 1, 8.351871e-23, 2.1175824e-22, 8.351872e-23, 1, -0.00491336, -0.00032049417, 0.00059507694)
 shape = SubResource("BoxShape3D_njr75")
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_F"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
+
 [node name="Door_F_001" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(4.2668676e-06, -100, 4.371139e-06, 0, 4.371139e-06, 100, 97.61455, 4.371139e-06, -1.9106854e-13, 8.857, 1.2615561, 13.874624)
 script = ExtResource("23_clh1d")
@@ -28446,9 +28461,13 @@ libraries = {
 &"": SubResource("AnimationLibrary_s4tjc")
 }
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_F_001"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
+
 [node name="Door_Fr" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(-208.61823, 5.9476537e-05, 2.599801e-12, 0, -6.676184e-06, 152.73323, 8.123893e-05, 152.73329, 6.6761813e-06, -1.112234, 1.2639415, -1.4343266)
 script = ExtResource("23_clh1d")
+is_metal = true
 
 [node name="Door_Fr" type="MeshInstance3D" parent="BurgerPiz/Door_Fr"]
 transform = Transform3D(1.0000001, -2.842171e-14, 3.3881318e-21, -5.684342e-14, 1, 0, 3.3881318e-21, 0, 1, 0, 0, 0)
@@ -28469,6 +28488,9 @@ shape = SubResource("BoxShape3D_4bv2d")
 libraries = {
 &"": SubResource("AnimationLibrary_v7kjo")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_Fr"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
 
 [node name="Door_W" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(152.73325, 0, 0, 0, -6.6761813e-06, 152.73323, 0, -152.73323, -6.6761813e-06, 6.4960604, 1.3120311, 4.5657787)
@@ -28493,6 +28515,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_jkn08")
 }
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_W"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
+
 [node name="Door_W_01" type="Area3D" parent="BurgerPiz"]
 transform = Transform3D(152.73323, -1.3352362e-05, 5.836503e-13, 0, 6.676181e-06, 152.73323, 1.3352363e-05, 152.73322, -6.6761813e-06, 6.4960604, 1.3120311, 1.1122358)
 script = ExtResource("23_clh1d")
@@ -28515,6 +28540,9 @@ shape = SubResource("BoxShape3D_5s0up")
 libraries = {
 &"": SubResource("AnimationLibrary_dhijs")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="BurgerPiz/Door_W_01"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
 
 [node name="Floor" type="MeshInstance3D" parent="BurgerPiz"]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 2.1907477, -0.0033823252, 9.967464)

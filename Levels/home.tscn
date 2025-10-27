@@ -53455,6 +53455,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_8ruot")
 }
 
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="House/Door"]
+transform = Transform3D(0.009999999, 0, -6.617445e-24, 1.110223e-16, 0.01, 1.110223e-16, 0, -8.326673e-17, 0.009999999, -0.003717469, 0.0040550707, 0)
+
 [node name="Door_001" type="MeshInstance3D" parent="House"]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 5.8629766, 4.9909096, -4.651485)
 mesh = SubResource("ArrayMesh_s6aqc")
@@ -53583,6 +53586,9 @@ shape = SubResource("BoxShape3D_lreq1")
 libraries = {
 &"": SubResource("AnimationLibrary_woegj")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="House/Door_006"]
+transform = Transform3D(0.009999999, 4.2391984e-17, 1.2633801e-24, -4.2391987e-17, 0.01, 1.110223e-16, -1.2633796e-24, -8.326673e-17, 0.009999999, -0.004620824, 0.0040550753, 0)
 
 [node name="closet_door_03" type="MeshInstance3D" parent="House"]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 7.158034, 4.9909096, -9.331572)

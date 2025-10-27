@@ -16015,8 +16015,6 @@ sky_mode = 1
 transform = Transform3D(-0.45802915, 0, 0.8889372, 0, 1, 0, -0.8889372, 0, -0.45802915, 8.726431, 0, -23.595837)
 
 [node name="Laundry" type="Node3D" parent="."]
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="Laundry" type="MeshInstance3D" parent="Laundry"]
 transform = Transform3D(0, 100, 2.9802322e-06, 2.9802322e-06, 0, 100, 100, 2.9802322e-06, 0, 3.164173, 0.62988245, -29.007967)
@@ -16191,6 +16189,9 @@ shape = SubResource("BoxShape3D_5y1ed")
 libraries = {
 &"": SubResource("AnimationLibrary_ljhts")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="Laundry/DoorsWood"]
+transform = Transform3D(0.009906623, 4.1996145e-17, 1.2515829e-24, -4.1996145e-17, 0.009906623, 0, -1.2515828e-24, 0, 0.009906623, -0.0037364932, 0.004055068, 9.313226e-10)
 
 [node name="TilesPlain" type="MeshInstance3D" parent="Laundry"]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0.68069434, 0.0043759346, -22.461533)
@@ -16884,6 +16885,9 @@ shape = SubResource("BoxShape3D_isyhh")
 libraries = {
 &"": SubResource("AnimationLibrary_wuo4x")
 }
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="Laundry/DoorsWood_01"]
+transform = Transform3D(0.009906623, 5.551115e-17, 0, -5.551115e-17, 0.009906623, 8.273885e-25, 0, 8.273883e-25, 0.009906623, -0.0058436245, 0.00073359534, 0)
 
 [node name="frame_door_02" type="MeshInstance3D" parent="Laundry"]
 transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, -5.1706157, 1.5632389, -16.90111)
@@ -18772,6 +18776,9 @@ libraries = {
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Laundry/Door"]
 transform = Transform3D(1, 0, 0, 0, 0.9999998, -1.2114754e-11, 0, 1.2114754e-11, 0.9999998, -0.00054836273, 0.005525589, 0.0015068082)
 shape = SubResource("BoxShape3D_7pw24")
+
+[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="Laundry/Door"]
+transform = Transform3D(0.006547363, 2.7755576e-17, 8.271806e-25, -2.7755576e-17, 0.006547363, 5.468274e-25, -8.271806e-25, -2.7755576e-17, 0.006547364, 0, 0.0040550716, 0)
 
 [node name="Laundry_building" type="MeshInstance3D" parent="Laundry"]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -0.48913327, 2.8592272, -22.24005)
