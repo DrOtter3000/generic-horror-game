@@ -6,7 +6,7 @@ extends task_interactor
 @onready var pick_up_phone_sound = preload("res://Audio/SFX/PickUpPhone.wav")
 @onready var hang_up_phone_sound = preload("res://Audio/SFX/HangUpPhone.wav")
 
-var wait_time := .1
+var wait_time := 5.0
 
 func interact() -> void:
 	super()
@@ -18,7 +18,7 @@ func interact() -> void:
 	get_tree().call_group("HUD", "deactivate_interaction_label", true)
 	get_tree().call_group("HUD", "update_communication_container", "You:", "Yes, Hello?")
 	await get_tree().create_timer(wait_time/2).timeout
-	get_tree().call_group("HUD", "update_communication_container", "???:", "Hey, am I right at BurgerPlace?")
+	get_tree().call_group("HUD", "update_communication_container", "???:", "Hey, am I right at BurgerPiz?")
 	await get_tree().create_timer(wait_time).timeout
 	get_tree().call_group("HUD", "update_communication_container", "You:", "Yes, but this place is closed, I'm the janitor.")
 	await get_tree().create_timer(wait_time).timeout

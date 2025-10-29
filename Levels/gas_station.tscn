@@ -1,4 +1,4 @@
-[gd_scene load_steps=2369 format=4 uid="uid://bvdv7oqi2s4fq"]
+[gd_scene load_steps=2370 format=4 uid="uid://bvdv7oqi2s4fq"]
 
 [ext_resource type="Texture2D" uid="uid://b04nxncx4eo8y" path="res://Assets/Gas_station/Textures/AsphaltDamaged.jpg" id="1_fvmyt"]
 [ext_resource type="Texture2D" uid="uid://cbhirelp1di3f" path="res://Assets/Gas_station/Textures/Asphalt.jpg" id="2_aniek"]
@@ -79,6 +79,7 @@
 [ext_resource type="PackedScene" uid="uid://drckt6w53jjyb" path="res://Characters/Creature/creature.tscn" id="76_t1m76"]
 [ext_resource type="PackedScene" uid="uid://cm03u4ok5d43h" path="res://Levels/Lights/industrial_light_strong.tscn" id="78_3pllk"]
 [ext_resource type="PackedScene" uid="uid://dfybwx6045fyl" path="res://Levels/Lights/industrial_light.tscn" id="79_2afld"]
+[ext_resource type="PackedScene" uid="uid://clbywkrqexjw3" path="res://Levels/caseohpic.tscn" id="80_2afld"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3pllk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38025,6 +38026,8 @@ shadow_enabled = true
 sky_mode = 1
 
 [node name="Gas_station" type="Node3D" parent="."]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="AsphaltDamaged" type="MeshInstance3D" parent="Gas_station"]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 8.507454, 0, -7.414892)
@@ -43625,3 +43628,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0601308, 3.8330793, -26.686
 
 [node name="IndustrialLight8" parent="Lights" instance=ExtResource("79_2afld")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.483154, 3.8330793, -21.755274)
+
+[node name="Caseohpic" parent="." instance=ExtResource("80_2afld")]
+transform = Transform3D(-8.742278e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.742278e-09, 7.6020617, 2.2437823, -24.495567)

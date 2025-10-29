@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://clbywkrqexjw3"]
+
+[ext_resource type="PackedScene" uid="uid://dvqvkqs2n28do" path="res://Assets/Frame.blend" id="1_2hi84"]
+[ext_resource type="Texture2D" uid="uid://b3wlnvn3hr3uj" path="res://Assets/Pictures/caseoh.png" id="2_c3h1r"]
+
+[node name="Caseohpic" type="Node3D"]
+
+[node name="Frame" parent="." instance=ExtResource("1_2hi84")]
+transform = Transform3D(-2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="Frame"]
+transform = Transform3D(-4.152582e-08, -0.95, -4.152582e-08, 0, -4.152582e-08, 0.95, -0.95, 4.152582e-08, 1.8151512e-15, -0.042004466, -0.018408107, 0.024299145)
+texture = ExtResource("2_c3h1r")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=1801 format=4 uid="uid://dv3kskdtrrvwu"]
+[gd_scene load_steps=1805 format=4 uid="uid://dv3kskdtrrvwu"]
 
 [ext_resource type="Texture2D" uid="uid://cwgv6xueyunb6" path="res://Assets/BurgerPiz/Textures/air-conditioning.png" id="1_gqmkb"]
 [ext_resource type="Script" uid="uid://d0auj6bihfs2" path="res://Levels/Scripts/burger_place.gd" id="1_m24p6"]
@@ -100,6 +100,9 @@
 [ext_resource type="AudioStream" uid="uid://dg3iv24pn6poa" path="res://Audio/SFX/tv-static-03.wav" id="98_arix6"]
 [ext_resource type="PackedScene" uid="uid://bxo2x4vc83wop" path="res://Assets/Box.fbx" id="99_1r041"]
 [ext_resource type="PackedScene" uid="uid://br0sp0p1ljr2f" path="res://Assets/purse.fbx" id="100_ru15u"]
+[ext_resource type="PackedScene" uid="uid://2nln4p5otvex" path="res://Levels/otterjuice.tscn" id="101_ru15u"]
+[ext_resource type="Script" uid="uid://cvovrwp0clqq6" path="res://Levels/Scripts/use_toilet.gd" id="102_wobiq"]
+[ext_resource type="AudioStream" uid="uid://bmwar6gpqm6of" path="res://Audio/SFX/toilet-flush-sound.mp3" id="103_y161w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i17x5"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -27709,6 +27712,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_x7tiw")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_y161w"]
+size = Vector3(0.39465332, 1, 0.79003906)
+
 [node name="BurgerPlace" type="Node3D" groups=["BurgerPlace"]]
 script = ExtResource("1_m24p6")
 
@@ -32126,3 +32132,66 @@ transform = Transform3D(-0.012469558, 0, 0.24968882, 0, 0.25, 0, -0.24968882, 0,
 
 [node name="purse" parent="Box" groups=["Purse"] instance=ExtResource("100_ru15u")]
 transform = Transform3D(2.6402898, 0, -1.424385, 0, 3, 0, 1.424385, 0, 2.6402898, 0.17537981, 0.09049654, -0.3279438)
+
+[node name="Otterjuice" parent="." instance=ExtResource("101_ru15u")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 7.6537743, 2.7728481, 9.517917)
+
+[node name="Otterjuice2" parent="." instance=ExtResource("101_ru15u")]
+transform = Transform3D(0, 0, 0.29999998, 0, 0.29999998, 0, -0.29999998, 0, 0, 3.8814254, 2.1987247, 3.1224291)
+
+[node name="FlushToilet" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.725089, 0.93929315, -0.66747224)
+script = ExtResource("102_wobiq")
+has_cereals = false
+text = "Flush Toilet"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlushToilet"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007385254, -0.28863978, 0.10498047)
+shape = SubResource("BoxShape3D_y161w")
+
+[node name="ToiletSound" type="AudioStreamPlayer3D" parent="FlushToilet"]
+stream = ExtResource("103_y161w")
+
+[node name="FlushToilet2" type="Area3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.384558, 1.5392932, 5.2461057)
+script = ExtResource("102_wobiq")
+has_cereals = false
+text = "Flush Toilet"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlushToilet2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007385254, -0.28863978, 0.10498047)
+shape = SubResource("BoxShape3D_y161w")
+
+[node name="ToiletSound" type="AudioStreamPlayer3D" parent="FlushToilet2"]
+stream = ExtResource("103_y161w")
+
+[node name="FlushToilet3" type="Area3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.384558, 1.5392932, 4.546106)
+script = ExtResource("102_wobiq")
+has_cereals = false
+text = "Flush Toilet"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlushToilet3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007385254, -0.28863978, 0.10498047)
+shape = SubResource("BoxShape3D_y161w")
+
+[node name="ToiletSound" type="AudioStreamPlayer3D" parent="FlushToilet3"]
+stream = ExtResource("103_y161w")
+
+[node name="FlushToilet4" type="Area3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.384558, 1.5392932, 3.6461058)
+script = ExtResource("102_wobiq")
+has_cereals = false
+text = "Flush Toilet"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlushToilet4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007385254, -0.28863978, 0.10498047)
+shape = SubResource("BoxShape3D_y161w")
+
+[node name="ToiletSound" type="AudioStreamPlayer3D" parent="FlushToilet4"]
+stream = ExtResource("103_y161w")
+
+[connection signal="finished" from="FlushToilet/ToiletSound" to="FlushToilet" method="_on_toilet_sound_finished"]
+[connection signal="finished" from="FlushToilet2/ToiletSound" to="FlushToilet2" method="_on_toilet_sound_finished"]
+[connection signal="finished" from="FlushToilet3/ToiletSound" to="FlushToilet3" method="_on_toilet_sound_finished"]
+[connection signal="finished" from="FlushToilet4/ToiletSound" to="FlushToilet4" method="_on_toilet_sound_finished"]

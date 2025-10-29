@@ -1,6 +1,6 @@
 extends task_interactor
 
-var wait_time := .1
+var wait_time := 5.0
 var creature: Creature
 
 func _ready() -> void:
