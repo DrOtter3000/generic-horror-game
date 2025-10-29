@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqyymj5p7jpai"
 path.s3tc="res://.godot/imported/Candy_Container_02.png-b4f2de7cc9628e2847ef5d87de65a4f5.s3tc.ctex"
+path.etc2="res://.godot/imported/Candy_Container_02.png-b4f2de7cc9628e2847ef5d87de65a4f5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Candy_Container_02.png"
-dest_files=["res://.godot/imported/Candy_Container_02.png-b4f2de7cc9628e2847ef5d87de65a4f5.s3tc.ctex"]
+dest_files=["res://.godot/imported/Candy_Container_02.png-b4f2de7cc9628e2847ef5d87de65a4f5.s3tc.ctex", "res://.godot/imported/Candy_Container_02.png-b4f2de7cc9628e2847ef5d87de65a4f5.etc2.ctex"]
 
 [params]
 

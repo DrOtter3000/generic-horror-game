@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1n7dmkeotc7m"
 path.s3tc="res://.godot/imported/basket.png-2c799f78589349c622ecf23d38926c9f.s3tc.ctex"
+path.etc2="res://.godot/imported/basket.png-2c799f78589349c622ecf23d38926c9f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/basket.png"
-dest_files=["res://.godot/imported/basket.png-2c799f78589349c622ecf23d38926c9f.s3tc.ctex"]
+dest_files=["res://.godot/imported/basket.png-2c799f78589349c622ecf23d38926c9f.s3tc.ctex", "res://.godot/imported/basket.png-2c799f78589349c622ecf23d38926c9f.etc2.ctex"]
 
 [params]
 

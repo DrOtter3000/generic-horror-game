@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba60hxp4hnay"
 path.s3tc="res://.godot/imported/Mop.png-f3adebeffdea4ab2afd3414f82a91827.s3tc.ctex"
+path.etc2="res://.godot/imported/Mop.png-f3adebeffdea4ab2afd3414f82a91827.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Mop.png"
-dest_files=["res://.godot/imported/Mop.png-f3adebeffdea4ab2afd3414f82a91827.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mop.png-f3adebeffdea4ab2afd3414f82a91827.s3tc.ctex", "res://.godot/imported/Mop.png-f3adebeffdea4ab2afd3414f82a91827.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://chbbi1q4d8hmj"
 path.s3tc="res://.godot/imported/BurgerPiz_cardboard_boxes.png-7aa154f4ca010849a86a70a5cfa46483.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_cardboard_boxes.png-7aa154f4ca010849a86a70a5cfa46483.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/BurgerPiz/Models/BurgerPiz_cardboard_boxes.png"
-dest_files=["res://.godot/imported/BurgerPiz_cardboard_boxes.png-7aa154f4ca010849a86a70a5cfa46483.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_cardboard_boxes.png-7aa154f4ca010849a86a70a5cfa46483.s3tc.ctex", "res://.godot/imported/BurgerPiz_cardboard_boxes.png-7aa154f4ca010849a86a70a5cfa46483.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpndp53ccxmqb"
 path.s3tc="res://.godot/imported/Fridge.png-fa6c17993dbc45d19bbb391e1af68564.s3tc.ctex"
+path.etc2="res://.godot/imported/Fridge.png-fa6c17993dbc45d19bbb391e1af68564.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Fridge.png"
-dest_files=["res://.godot/imported/Fridge.png-fa6c17993dbc45d19bbb391e1af68564.s3tc.ctex"]
+dest_files=["res://.godot/imported/Fridge.png-fa6c17993dbc45d19bbb391e1af68564.s3tc.ctex", "res://.godot/imported/Fridge.png-fa6c17993dbc45d19bbb391e1af68564.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clojfcig6ntr7"
 path.s3tc="res://.godot/imported/Broom.png-ffe74fd36176ac47773ac09916e6389a.s3tc.ctex"
+path.etc2="res://.godot/imported/Broom.png-ffe74fd36176ac47773ac09916e6389a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/Broom.png"
-dest_files=["res://.godot/imported/Broom.png-ffe74fd36176ac47773ac09916e6389a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Broom.png-ffe74fd36176ac47773ac09916e6389a.s3tc.ctex", "res://.godot/imported/Broom.png-ffe74fd36176ac47773ac09916e6389a.etc2.ctex"]
 
 [params]
 

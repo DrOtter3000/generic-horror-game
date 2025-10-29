@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1uh1d566bl0r"
 path.s3tc="res://.godot/imported/clothes.png-4de6a20d919c3b16026367f1445ab7b7.s3tc.ctex"
+path.etc2="res://.godot/imported/clothes.png-4de6a20d919c3b16026367f1445ab7b7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/clothes.png"
-dest_files=["res://.godot/imported/clothes.png-4de6a20d919c3b16026367f1445ab7b7.s3tc.ctex"]
+dest_files=["res://.godot/imported/clothes.png-4de6a20d919c3b16026367f1445ab7b7.s3tc.ctex", "res://.godot/imported/clothes.png-4de6a20d919c3b16026367f1445ab7b7.etc2.ctex"]
 
 [params]
 

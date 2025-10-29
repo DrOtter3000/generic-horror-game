@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c36icu8nkcg2o"
 path.s3tc="res://.godot/imported/Palette.png-ac20bea5624b54cf3a2349dc3aafb868.s3tc.ctex"
+path.etc2="res://.godot/imported/Palette.png-ac20bea5624b54cf3a2349dc3aafb868.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Palette.png"
-dest_files=["res://.godot/imported/Palette.png-ac20bea5624b54cf3a2349dc3aafb868.s3tc.ctex"]
+dest_files=["res://.godot/imported/Palette.png-ac20bea5624b54cf3a2349dc3aafb868.s3tc.ctex", "res://.godot/imported/Palette.png-ac20bea5624b54cf3a2349dc3aafb868.etc2.ctex"]
 
 [params]
 

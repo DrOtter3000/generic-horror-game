@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfnav70c5s6mk"
 path.s3tc="res://.godot/imported/Sign.png-c91b8b350964c3c3b731ad0e0e4166fc.s3tc.ctex"
+path.etc2="res://.godot/imported/Sign.png-c91b8b350964c3c3b731ad0e0e4166fc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Sign.png"
-dest_files=["res://.godot/imported/Sign.png-c91b8b350964c3c3b731ad0e0e4166fc.s3tc.ctex"]
+dest_files=["res://.godot/imported/Sign.png-c91b8b350964c3c3b731ad0e0e4166fc.s3tc.ctex", "res://.godot/imported/Sign.png-c91b8b350964c3c3b731ad0e0e4166fc.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj14ob83sregw"
 path.s3tc="res://.godot/imported/Detergent_bottle.png-5f0fa7b14aa12f7e003d4e0fc981f210.s3tc.ctex"
+path.etc2="res://.godot/imported/Detergent_bottle.png-5f0fa7b14aa12f7e003d4e0fc981f210.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Detergent_bottle.png"
-dest_files=["res://.godot/imported/Detergent_bottle.png-5f0fa7b14aa12f7e003d4e0fc981f210.s3tc.ctex"]
+dest_files=["res://.godot/imported/Detergent_bottle.png-5f0fa7b14aa12f7e003d4e0fc981f210.s3tc.ctex", "res://.godot/imported/Detergent_bottle.png-5f0fa7b14aa12f7e003d4e0fc981f210.etc2.ctex"]
 
 [params]
 

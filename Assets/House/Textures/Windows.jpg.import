@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmwiscusflm1q"
 path.s3tc="res://.godot/imported/Windows.jpg-32d00fe20641e8b997d6f5734799530c.s3tc.ctex"
+path.etc2="res://.godot/imported/Windows.jpg-32d00fe20641e8b997d6f5734799530c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Windows.jpg"
-dest_files=["res://.godot/imported/Windows.jpg-32d00fe20641e8b997d6f5734799530c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Windows.jpg-32d00fe20641e8b997d6f5734799530c.s3tc.ctex", "res://.godot/imported/Windows.jpg-32d00fe20641e8b997d6f5734799530c.etc2.ctex"]
 
 [params]
 

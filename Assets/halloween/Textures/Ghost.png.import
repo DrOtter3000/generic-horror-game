@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c17kpo5b3doak"
 path.s3tc="res://.godot/imported/Ghost.png-1c6def6217307e995cbd10b48e56d5e8.s3tc.ctex"
+path.etc2="res://.godot/imported/Ghost.png-1c6def6217307e995cbd10b48e56d5e8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Ghost.png"
-dest_files=["res://.godot/imported/Ghost.png-1c6def6217307e995cbd10b48e56d5e8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ghost.png-1c6def6217307e995cbd10b48e56d5e8.s3tc.ctex", "res://.godot/imported/Ghost.png-1c6def6217307e995cbd10b48e56d5e8.etc2.ctex"]
 
 [params]
 

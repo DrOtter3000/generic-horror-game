@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cflbcycxidtoc"
 path.s3tc="res://.godot/imported/GrassDead.jpg-7e48393747007235393e1a3ddd4817f2.s3tc.ctex"
+path.etc2="res://.godot/imported/GrassDead.jpg-7e48393747007235393e1a3ddd4817f2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/GrassDead.jpg"
-dest_files=["res://.godot/imported/GrassDead.jpg-7e48393747007235393e1a3ddd4817f2.s3tc.ctex"]
+dest_files=["res://.godot/imported/GrassDead.jpg-7e48393747007235393e1a3ddd4817f2.s3tc.ctex", "res://.godot/imported/GrassDead.jpg-7e48393747007235393e1a3ddd4817f2.etc2.ctex"]
 
 [params]
 

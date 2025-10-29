@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da040javqg8tn"
 path.s3tc="res://.godot/imported/Mop.png-141a29f740662154d8b2a6f56e0ec570.s3tc.ctex"
+path.etc2="res://.godot/imported/Mop.png-141a29f740662154d8b2a6f56e0ec570.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/Mop.png"
-dest_files=["res://.godot/imported/Mop.png-141a29f740662154d8b2a6f56e0ec570.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mop.png-141a29f740662154d8b2a6f56e0ec570.s3tc.ctex", "res://.godot/imported/Mop.png-141a29f740662154d8b2a6f56e0ec570.etc2.ctex"]
 
 [params]
 

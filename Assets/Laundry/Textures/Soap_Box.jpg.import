@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwr0w0cuedigo"
 path.s3tc="res://.godot/imported/Soap_Box.jpg-b15654f8a8c7cc5ca15022eae2ab8bc8.s3tc.ctex"
+path.etc2="res://.godot/imported/Soap_Box.jpg-b15654f8a8c7cc5ca15022eae2ab8bc8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Soap_Box.jpg"
-dest_files=["res://.godot/imported/Soap_Box.jpg-b15654f8a8c7cc5ca15022eae2ab8bc8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Soap_Box.jpg-b15654f8a8c7cc5ca15022eae2ab8bc8.s3tc.ctex", "res://.godot/imported/Soap_Box.jpg-b15654f8a8c7cc5ca15022eae2ab8bc8.etc2.ctex"]
 
 [params]
 

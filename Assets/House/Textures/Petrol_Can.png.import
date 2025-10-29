@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhjdx0bhaupvj"
 path.s3tc="res://.godot/imported/Petrol_Can.png-d613182d51417e90c3cc3bcf6a29e661.s3tc.ctex"
+path.etc2="res://.godot/imported/Petrol_Can.png-d613182d51417e90c3cc3bcf6a29e661.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Petrol_Can.png"
-dest_files=["res://.godot/imported/Petrol_Can.png-d613182d51417e90c3cc3bcf6a29e661.s3tc.ctex"]
+dest_files=["res://.godot/imported/Petrol_Can.png-d613182d51417e90c3cc3bcf6a29e661.s3tc.ctex", "res://.godot/imported/Petrol_Can.png-d613182d51417e90c3cc3bcf6a29e661.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjufadlt028lq"
 path.s3tc="res://.godot/imported/counter_bell.png-578eaf3385a311944c11902e7d3acb07.s3tc.ctex"
+path.etc2="res://.godot/imported/counter_bell.png-578eaf3385a311944c11902e7d3acb07.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/counter_bell.png"
-dest_files=["res://.godot/imported/counter_bell.png-578eaf3385a311944c11902e7d3acb07.s3tc.ctex"]
+dest_files=["res://.godot/imported/counter_bell.png-578eaf3385a311944c11902e7d3acb07.s3tc.ctex", "res://.godot/imported/counter_bell.png-578eaf3385a311944c11902e7d3acb07.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmqe62gs4r6ik"
 path.s3tc="res://.godot/imported/Metal_01.jpg-6fdccc7e2ef352510df3a3ece7a40374.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal_01.jpg-6fdccc7e2ef352510df3a3ece7a40374.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Metal_01.jpg"
-dest_files=["res://.godot/imported/Metal_01.jpg-6fdccc7e2ef352510df3a3ece7a40374.s3tc.ctex"]
+dest_files=["res://.godot/imported/Metal_01.jpg-6fdccc7e2ef352510df3a3ece7a40374.s3tc.ctex", "res://.godot/imported/Metal_01.jpg-6fdccc7e2ef352510df3a3ece7a40374.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dduycddvy1xrk"
 path.s3tc="res://.godot/imported/Stone_08.png-3378182e04f881db96987f9ba51bdef0.s3tc.ctex"
+path.etc2="res://.godot/imported/Stone_08.png-3378182e04f881db96987f9ba51bdef0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Stone_08.png"
-dest_files=["res://.godot/imported/Stone_08.png-3378182e04f881db96987f9ba51bdef0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Stone_08.png-3378182e04f881db96987f9ba51bdef0.s3tc.ctex", "res://.godot/imported/Stone_08.png-3378182e04f881db96987f9ba51bdef0.etc2.ctex"]
 
 [params]
 

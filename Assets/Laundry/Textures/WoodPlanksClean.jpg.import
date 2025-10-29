@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://kwit8ka668s0"
 path.s3tc="res://.godot/imported/WoodPlanksClean.jpg-9d2629f3fd8c6a8a579c6f04708a924f.s3tc.ctex"
+path.etc2="res://.godot/imported/WoodPlanksClean.jpg-9d2629f3fd8c6a8a579c6f04708a924f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/WoodPlanksClean.jpg"
-dest_files=["res://.godot/imported/WoodPlanksClean.jpg-9d2629f3fd8c6a8a579c6f04708a924f.s3tc.ctex"]
+dest_files=["res://.godot/imported/WoodPlanksClean.jpg-9d2629f3fd8c6a8a579c6f04708a924f.s3tc.ctex", "res://.godot/imported/WoodPlanksClean.jpg-9d2629f3fd8c6a8a579c6f04708a924f.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwrmn00gtf1g4"
 path.s3tc="res://.godot/imported/pcga.png-b7994c2dd1e75e194622a452cd68cd10.s3tc.ctex"
+path.etc2="res://.godot/imported/pcga.png-b7994c2dd1e75e194622a452cd68cd10.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Mini Market/pcga.png"
-dest_files=["res://.godot/imported/pcga.png-b7994c2dd1e75e194622a452cd68cd10.s3tc.ctex"]
+dest_files=["res://.godot/imported/pcga.png-b7994c2dd1e75e194622a452cd68cd10.s3tc.ctex", "res://.godot/imported/pcga.png-b7994c2dd1e75e194622a452cd68cd10.etc2.ctex"]
 
 [params]
 

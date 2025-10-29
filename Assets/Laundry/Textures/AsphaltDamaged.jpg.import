@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddhane41tnov5"
 path.s3tc="res://.godot/imported/AsphaltDamaged.jpg-13b4a37d6a489d3a03e4c6b9215a089d.s3tc.ctex"
+path.etc2="res://.godot/imported/AsphaltDamaged.jpg-13b4a37d6a489d3a03e4c6b9215a089d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/AsphaltDamaged.jpg"
-dest_files=["res://.godot/imported/AsphaltDamaged.jpg-13b4a37d6a489d3a03e4c6b9215a089d.s3tc.ctex"]
+dest_files=["res://.godot/imported/AsphaltDamaged.jpg-13b4a37d6a489d3a03e4c6b9215a089d.s3tc.ctex", "res://.godot/imported/AsphaltDamaged.jpg-13b4a37d6a489d3a03e4c6b9215a089d.etc2.ctex"]
 
 [params]
 

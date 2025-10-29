@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://jehwc0tx2r05"
 path.s3tc="res://.godot/imported/Bar_soap.png-6032d07b85b082c56480de720e16c967.s3tc.ctex"
+path.etc2="res://.godot/imported/Bar_soap.png-6032d07b85b082c56480de720e16c967.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Bar_soap.png"
-dest_files=["res://.godot/imported/Bar_soap.png-6032d07b85b082c56480de720e16c967.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bar_soap.png-6032d07b85b082c56480de720e16c967.s3tc.ctex", "res://.godot/imported/Bar_soap.png-6032d07b85b082c56480de720e16c967.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm151ay2hfjc4"
 path.s3tc="res://.godot/imported/Soda_fountain.png-1e8cfbd721bf8bb157e32de1a463ede6.s3tc.ctex"
+path.etc2="res://.godot/imported/Soda_fountain.png-1e8cfbd721bf8bb157e32de1a463ede6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Soda_fountain.png"
-dest_files=["res://.godot/imported/Soda_fountain.png-1e8cfbd721bf8bb157e32de1a463ede6.s3tc.ctex"]
+dest_files=["res://.godot/imported/Soda_fountain.png-1e8cfbd721bf8bb157e32de1a463ede6.s3tc.ctex", "res://.godot/imported/Soda_fountain.png-1e8cfbd721bf8bb157e32de1a463ede6.etc2.ctex"]
 
 [params]
 

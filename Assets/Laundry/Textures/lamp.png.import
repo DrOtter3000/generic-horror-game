@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://oo8wc06n1ded"
 path.s3tc="res://.godot/imported/lamp.png-32b86260186cca49425030b5613ab586.s3tc.ctex"
+path.etc2="res://.godot/imported/lamp.png-32b86260186cca49425030b5613ab586.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/lamp.png"
-dest_files=["res://.godot/imported/lamp.png-32b86260186cca49425030b5613ab586.s3tc.ctex"]
+dest_files=["res://.godot/imported/lamp.png-32b86260186cca49425030b5613ab586.s3tc.ctex", "res://.godot/imported/lamp.png-32b86260186cca49425030b5613ab586.etc2.ctex"]
 
 [params]
 

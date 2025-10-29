@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb21e5ish452h"
 path.s3tc="res://.godot/imported/Fabric_07.jpg-0005d5398a63b320659ecab4e8cb86ae.s3tc.ctex"
+path.etc2="res://.godot/imported/Fabric_07.jpg-0005d5398a63b320659ecab4e8cb86ae.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Items_1/Textures/Fabric_07.jpg"
-dest_files=["res://.godot/imported/Fabric_07.jpg-0005d5398a63b320659ecab4e8cb86ae.s3tc.ctex"]
+dest_files=["res://.godot/imported/Fabric_07.jpg-0005d5398a63b320659ecab4e8cb86ae.s3tc.ctex", "res://.godot/imported/Fabric_07.jpg-0005d5398a63b320659ecab4e8cb86ae.etc2.ctex"]
 
 [params]
 

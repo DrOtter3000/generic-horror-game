@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbhirelp1di3f"
 path.s3tc="res://.godot/imported/Asphalt.jpg-c1a3c5c4e119180b9e9bb0345b92a833.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt.jpg-c1a3c5c4e119180b9e9bb0345b92a833.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Asphalt.jpg"
-dest_files=["res://.godot/imported/Asphalt.jpg-c1a3c5c4e119180b9e9bb0345b92a833.s3tc.ctex"]
+dest_files=["res://.godot/imported/Asphalt.jpg-c1a3c5c4e119180b9e9bb0345b92a833.s3tc.ctex", "res://.godot/imported/Asphalt.jpg-c1a3c5c4e119180b9e9bb0345b92a833.etc2.ctex"]
 
 [params]
 

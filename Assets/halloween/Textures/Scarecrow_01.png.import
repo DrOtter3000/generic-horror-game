@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi7wr8thbh3ms"
 path.s3tc="res://.godot/imported/Scarecrow_01.png-51b80af420667d9d13025b3cd84d20a8.s3tc.ctex"
+path.etc2="res://.godot/imported/Scarecrow_01.png-51b80af420667d9d13025b3cd84d20a8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Scarecrow_01.png"
-dest_files=["res://.godot/imported/Scarecrow_01.png-51b80af420667d9d13025b3cd84d20a8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Scarecrow_01.png-51b80af420667d9d13025b3cd84d20a8.s3tc.ctex", "res://.godot/imported/Scarecrow_01.png-51b80af420667d9d13025b3cd84d20a8.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cack3k1r5ahml"
 path.s3tc="res://.godot/imported/Toolbox.png-697d6303db1ed9799574fa1c60bb359a.s3tc.ctex"
+path.etc2="res://.godot/imported/Toolbox.png-697d6303db1ed9799574fa1c60bb359a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Toolbox.png"
-dest_files=["res://.godot/imported/Toolbox.png-697d6303db1ed9799574fa1c60bb359a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Toolbox.png-697d6303db1ed9799574fa1c60bb359a.s3tc.ctex", "res://.godot/imported/Toolbox.png-697d6303db1ed9799574fa1c60bb359a.etc2.ctex"]
 
 [params]
 

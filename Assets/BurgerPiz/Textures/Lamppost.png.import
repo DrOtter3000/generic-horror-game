@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://do1v5y02g1i4q"
 path.s3tc="res://.godot/imported/Lamppost.png-ba97e1d82cd4763d21672922486f84df.s3tc.ctex"
+path.etc2="res://.godot/imported/Lamppost.png-ba97e1d82cd4763d21672922486f84df.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Lamppost.png"
-dest_files=["res://.godot/imported/Lamppost.png-ba97e1d82cd4763d21672922486f84df.s3tc.ctex"]
+dest_files=["res://.godot/imported/Lamppost.png-ba97e1d82cd4763d21672922486f84df.s3tc.ctex", "res://.godot/imported/Lamppost.png-ba97e1d82cd4763d21672922486f84df.etc2.ctex"]
 
 [params]
 

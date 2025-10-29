@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6vs12s88yu2"
 path.s3tc="res://.godot/imported/Television_static_2.png-6aa9f76ead10cadd0ed28ea8ac535bdd.s3tc.ctex"
+path.etc2="res://.godot/imported/Television_static_2.png-6aa9f76ead10cadd0ed28ea8ac535bdd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/StaticTV/Television_static_2.png"
-dest_files=["res://.godot/imported/Television_static_2.png-6aa9f76ead10cadd0ed28ea8ac535bdd.s3tc.ctex"]
+dest_files=["res://.godot/imported/Television_static_2.png-6aa9f76ead10cadd0ed28ea8ac535bdd.s3tc.ctex", "res://.godot/imported/Television_static_2.png-6aa9f76ead10cadd0ed28ea8ac535bdd.etc2.ctex"]
 
 [params]
 

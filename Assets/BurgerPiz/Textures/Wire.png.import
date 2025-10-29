@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d276te187vdqk"
 path.s3tc="res://.godot/imported/Wire.png-97a9452456aa64f70557bf20f9c7caab.s3tc.ctex"
+path.etc2="res://.godot/imported/Wire.png-97a9452456aa64f70557bf20f9c7caab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Wire.png"
-dest_files=["res://.godot/imported/Wire.png-97a9452456aa64f70557bf20f9c7caab.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wire.png-97a9452456aa64f70557bf20f9c7caab.s3tc.ctex", "res://.godot/imported/Wire.png-97a9452456aa64f70557bf20f9c7caab.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://6p0j36ldnoaw"
 path.s3tc="res://.godot/imported/DoorsWood.jpg-3831e12ca7bf6b7c8ba42e4cb0c8d0cf.s3tc.ctex"
+path.etc2="res://.godot/imported/DoorsWood.jpg-3831e12ca7bf6b7c8ba42e4cb0c8d0cf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/DoorsWood.jpg"
-dest_files=["res://.godot/imported/DoorsWood.jpg-3831e12ca7bf6b7c8ba42e4cb0c8d0cf.s3tc.ctex"]
+dest_files=["res://.godot/imported/DoorsWood.jpg-3831e12ca7bf6b7c8ba42e4cb0c8d0cf.s3tc.ctex", "res://.godot/imported/DoorsWood.jpg-3831e12ca7bf6b7c8ba42e4cb0c8d0cf.etc2.ctex"]
 
 [params]
 

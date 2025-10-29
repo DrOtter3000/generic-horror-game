@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc56b4n6foa34"
 path.s3tc="res://.godot/imported/Tree_01.png-435fcb67ce1a6cd2cfbe1c1213efb110.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree_01.png-435fcb67ce1a6cd2cfbe1c1213efb110.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Tree_01.png"
-dest_files=["res://.godot/imported/Tree_01.png-435fcb67ce1a6cd2cfbe1c1213efb110.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tree_01.png-435fcb67ce1a6cd2cfbe1c1213efb110.s3tc.ctex", "res://.godot/imported/Tree_01.png-435fcb67ce1a6cd2cfbe1c1213efb110.etc2.ctex"]
 
 [params]
 

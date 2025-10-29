@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://06d5btxq47bm"
 path.s3tc="res://.godot/imported/Background_01.png-63af8a9ecf2ce861a402b4d4a7a7a031.s3tc.ctex"
+path.etc2="res://.godot/imported/Background_01.png-63af8a9ecf2ce861a402b4d4a7a7a031.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Background_01.png"
-dest_files=["res://.godot/imported/Background_01.png-63af8a9ecf2ce861a402b4d4a7a7a031.s3tc.ctex"]
+dest_files=["res://.godot/imported/Background_01.png-63af8a9ecf2ce861a402b4d4a7a7a031.s3tc.ctex", "res://.godot/imported/Background_01.png-63af8a9ecf2ce861a402b4d4a7a7a031.etc2.ctex"]
 
 [params]
 

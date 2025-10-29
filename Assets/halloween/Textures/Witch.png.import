@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da6t46rnpuos"
 path.s3tc="res://.godot/imported/Witch.png-a81172e91928dc0ffce1b5ff60e8355c.s3tc.ctex"
+path.etc2="res://.godot/imported/Witch.png-a81172e91928dc0ffce1b5ff60e8355c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Witch.png"
-dest_files=["res://.godot/imported/Witch.png-a81172e91928dc0ffce1b5ff60e8355c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Witch.png-a81172e91928dc0ffce1b5ff60e8355c.s3tc.ctex", "res://.godot/imported/Witch.png-a81172e91928dc0ffce1b5ff60e8355c.etc2.ctex"]
 
 [params]
 

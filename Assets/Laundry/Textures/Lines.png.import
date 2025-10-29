@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2vxcp436ppvw"
 path.s3tc="res://.godot/imported/Lines.png-84350cc5035ce99495daf7029e71c7f5.s3tc.ctex"
+path.etc2="res://.godot/imported/Lines.png-84350cc5035ce99495daf7029e71c7f5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Lines.png"
-dest_files=["res://.godot/imported/Lines.png-84350cc5035ce99495daf7029e71c7f5.s3tc.ctex"]
+dest_files=["res://.godot/imported/Lines.png-84350cc5035ce99495daf7029e71c7f5.s3tc.ctex", "res://.godot/imported/Lines.png-84350cc5035ce99495daf7029e71c7f5.etc2.ctex"]
 
 [params]
 

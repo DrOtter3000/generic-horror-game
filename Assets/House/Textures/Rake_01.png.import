@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d36u6r4m0soub"
 path.s3tc="res://.godot/imported/Rake_01.png-0a967dad8fabd3110078317ff233e78c.s3tc.ctex"
+path.etc2="res://.godot/imported/Rake_01.png-0a967dad8fabd3110078317ff233e78c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/House/Textures/Rake_01.png"
-dest_files=["res://.godot/imported/Rake_01.png-0a967dad8fabd3110078317ff233e78c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rake_01.png-0a967dad8fabd3110078317ff233e78c.s3tc.ctex", "res://.godot/imported/Rake_01.png-0a967dad8fabd3110078317ff233e78c.etc2.ctex"]
 
 [params]
 

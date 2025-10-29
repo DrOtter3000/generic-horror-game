@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0efblixjr04t"
 path.s3tc="res://.godot/imported/Board.jpg-47b0d79a2a8464f0e0c2a7a575aa76b0.s3tc.ctex"
+path.etc2="res://.godot/imported/Board.jpg-47b0d79a2a8464f0e0c2a7a575aa76b0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Board.jpg"
-dest_files=["res://.godot/imported/Board.jpg-47b0d79a2a8464f0e0c2a7a575aa76b0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Board.jpg-47b0d79a2a8464f0e0c2a7a575aa76b0.s3tc.ctex", "res://.godot/imported/Board.jpg-47b0d79a2a8464f0e0c2a7a575aa76b0.etc2.ctex"]
 
 [params]
 

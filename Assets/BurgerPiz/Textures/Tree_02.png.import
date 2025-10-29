@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5b0n57w0g7je"
 path.s3tc="res://.godot/imported/Tree_02.png-1d9bbd62bc0be2f72c8ebc3980821ad6.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree_02.png-1d9bbd62bc0be2f72c8ebc3980821ad6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Tree_02.png"
-dest_files=["res://.godot/imported/Tree_02.png-1d9bbd62bc0be2f72c8ebc3980821ad6.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tree_02.png-1d9bbd62bc0be2f72c8ebc3980821ad6.s3tc.ctex", "res://.godot/imported/Tree_02.png-1d9bbd62bc0be2f72c8ebc3980821ad6.etc2.ctex"]
 
 [params]
 

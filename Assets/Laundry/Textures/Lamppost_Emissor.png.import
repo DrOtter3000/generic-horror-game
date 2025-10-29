@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvps6meprrmci"
 path.s3tc="res://.godot/imported/Lamppost_Emissor.png-7cc13553ab49533a54fbcbf3d8758590.s3tc.ctex"
+path.etc2="res://.godot/imported/Lamppost_Emissor.png-7cc13553ab49533a54fbcbf3d8758590.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Lamppost_Emissor.png"
-dest_files=["res://.godot/imported/Lamppost_Emissor.png-7cc13553ab49533a54fbcbf3d8758590.s3tc.ctex"]
+dest_files=["res://.godot/imported/Lamppost_Emissor.png-7cc13553ab49533a54fbcbf3d8758590.s3tc.ctex", "res://.godot/imported/Lamppost_Emissor.png-7cc13553ab49533a54fbcbf3d8758590.etc2.ctex"]
 
 [params]
 

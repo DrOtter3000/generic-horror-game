@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://crw15j71iqrw5"
 path.s3tc="res://.godot/imported/SoilSand.jpg-3f2afb6edb4b56b4c1c90b10f1e20b11.s3tc.ctex"
+path.etc2="res://.godot/imported/SoilSand.jpg-3f2afb6edb4b56b4c1c90b10f1e20b11.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/SoilSand.jpg"
-dest_files=["res://.godot/imported/SoilSand.jpg-3f2afb6edb4b56b4c1c90b10f1e20b11.s3tc.ctex"]
+dest_files=["res://.godot/imported/SoilSand.jpg-3f2afb6edb4b56b4c1c90b10f1e20b11.s3tc.ctex", "res://.godot/imported/SoilSand.jpg-3f2afb6edb4b56b4c1c90b10f1e20b11.etc2.ctex"]
 
 [params]
 

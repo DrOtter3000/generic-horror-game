@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyfwh3qqupk7r"
 path.s3tc="res://.godot/imported/Fuel_pump.png-2810abc240a827601bd2521c6bd065cd.s3tc.ctex"
+path.etc2="res://.godot/imported/Fuel_pump.png-2810abc240a827601bd2521c6bd065cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Fuel_pump.png"
-dest_files=["res://.godot/imported/Fuel_pump.png-2810abc240a827601bd2521c6bd065cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/Fuel_pump.png-2810abc240a827601bd2521c6bd065cd.s3tc.ctex", "res://.godot/imported/Fuel_pump.png-2810abc240a827601bd2521c6bd065cd.etc2.ctex"]
 
 [params]
 

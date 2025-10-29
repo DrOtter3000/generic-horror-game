@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ok8yte5ku2lu"
 path.s3tc="res://.godot/imported/BurgerPiz_Light.png-0ac1fc1c9b9ef4bf363be6cb44dd4788.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_Light.png-0ac1fc1c9b9ef4bf363be6cb44dd4788.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/BurgerPiz/Models/BurgerPiz_Light.png"
-dest_files=["res://.godot/imported/BurgerPiz_Light.png-0ac1fc1c9b9ef4bf363be6cb44dd4788.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_Light.png-0ac1fc1c9b9ef4bf363be6cb44dd4788.s3tc.ctex", "res://.godot/imported/BurgerPiz_Light.png-0ac1fc1c9b9ef4bf363be6cb44dd4788.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5e268r2w1pvc"
 path.s3tc="res://.godot/imported/sidewalk.png-b9b5ff7c4e2350bee09a5ba9df42cbdd.s3tc.ctex"
+path.etc2="res://.godot/imported/sidewalk.png-b9b5ff7c4e2350bee09a5ba9df42cbdd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/sidewalk.png"
-dest_files=["res://.godot/imported/sidewalk.png-b9b5ff7c4e2350bee09a5ba9df42cbdd.s3tc.ctex"]
+dest_files=["res://.godot/imported/sidewalk.png-b9b5ff7c4e2350bee09a5ba9df42cbdd.s3tc.ctex", "res://.godot/imported/sidewalk.png-b9b5ff7c4e2350bee09a5ba9df42cbdd.etc2.ctex"]
 
 [params]
 

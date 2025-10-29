@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://nfnmiwotrd53"
 path.s3tc="res://.godot/imported/menu_burger.png-1379955d12b220484401f0e6b07f2d96.s3tc.ctex"
+path.etc2="res://.godot/imported/menu_burger.png-1379955d12b220484401f0e6b07f2d96.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/menu_burger.png"
-dest_files=["res://.godot/imported/menu_burger.png-1379955d12b220484401f0e6b07f2d96.s3tc.ctex"]
+dest_files=["res://.godot/imported/menu_burger.png-1379955d12b220484401f0e6b07f2d96.s3tc.ctex", "res://.godot/imported/menu_burger.png-1379955d12b220484401f0e6b07f2d96.etc2.ctex"]
 
 [params]
 

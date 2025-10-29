@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcemhwxt3tfmi"
 path.s3tc="res://.godot/imported/BurgerPiz_Soda_fountain.png-5df96ae266e7328d2e2fbdb220c60685.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_Soda_fountain.png-5df96ae266e7328d2e2fbdb220c60685.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/BurgerPiz/Models/BurgerPiz_Soda_fountain.png"
-dest_files=["res://.godot/imported/BurgerPiz_Soda_fountain.png-5df96ae266e7328d2e2fbdb220c60685.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_Soda_fountain.png-5df96ae266e7328d2e2fbdb220c60685.s3tc.ctex", "res://.godot/imported/BurgerPiz_Soda_fountain.png-5df96ae266e7328d2e2fbdb220c60685.etc2.ctex"]
 
 [params]
 

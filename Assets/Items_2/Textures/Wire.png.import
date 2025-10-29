@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7l1k3w716ver"
 path.s3tc="res://.godot/imported/Wire.png-375b2b3907df7b8bc5b6592415900fc7.s3tc.ctex"
+path.etc2="res://.godot/imported/Wire.png-375b2b3907df7b8bc5b6592415900fc7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Items_2/Textures/Wire.png"
-dest_files=["res://.godot/imported/Wire.png-375b2b3907df7b8bc5b6592415900fc7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wire.png-375b2b3907df7b8bc5b6592415900fc7.s3tc.ctex", "res://.godot/imported/Wire.png-375b2b3907df7b8bc5b6592415900fc7.etc2.ctex"]
 
 [params]
 

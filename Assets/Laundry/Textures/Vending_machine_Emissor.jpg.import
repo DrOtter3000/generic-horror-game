@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1cykmt4lev2d"
 path.s3tc="res://.godot/imported/Vending_machine_Emissor.jpg-17d13692e5f169b48d871e65cb5221b2.s3tc.ctex"
+path.etc2="res://.godot/imported/Vending_machine_Emissor.jpg-17d13692e5f169b48d871e65cb5221b2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Vending_machine_Emissor.jpg"
-dest_files=["res://.godot/imported/Vending_machine_Emissor.jpg-17d13692e5f169b48d871e65cb5221b2.s3tc.ctex"]
+dest_files=["res://.godot/imported/Vending_machine_Emissor.jpg-17d13692e5f169b48d871e65cb5221b2.s3tc.ctex", "res://.godot/imported/Vending_machine_Emissor.jpg-17d13692e5f169b48d871e65cb5221b2.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://gpxhi5s5i4m"
 path.s3tc="res://.godot/imported/BrickSmallBrown.jpg-369f949e83a0fcf132800e339ec8b956.s3tc.ctex"
+path.etc2="res://.godot/imported/BrickSmallBrown.jpg-369f949e83a0fcf132800e339ec8b956.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/BrickSmallBrown.jpg"
-dest_files=["res://.godot/imported/BrickSmallBrown.jpg-369f949e83a0fcf132800e339ec8b956.s3tc.ctex"]
+dest_files=["res://.godot/imported/BrickSmallBrown.jpg-369f949e83a0fcf132800e339ec8b956.s3tc.ctex", "res://.godot/imported/BrickSmallBrown.jpg-369f949e83a0fcf132800e339ec8b956.etc2.ctex"]
 
 [params]
 

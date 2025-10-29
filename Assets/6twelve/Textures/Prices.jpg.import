@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlkw35s6qoskh"
 path.s3tc="res://.godot/imported/Prices.jpg-59892fbd1327393db50685db18fd1410.s3tc.ctex"
+path.etc2="res://.godot/imported/Prices.jpg-59892fbd1327393db50685db18fd1410.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/Prices.jpg"
-dest_files=["res://.godot/imported/Prices.jpg-59892fbd1327393db50685db18fd1410.s3tc.ctex"]
+dest_files=["res://.godot/imported/Prices.jpg-59892fbd1327393db50685db18fd1410.s3tc.ctex", "res://.godot/imported/Prices.jpg-59892fbd1327393db50685db18fd1410.etc2.ctex"]
 
 [params]
 

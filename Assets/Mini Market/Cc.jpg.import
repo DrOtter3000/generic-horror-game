@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyxl2dwqysuyc"
 path.s3tc="res://.godot/imported/Cc.jpg-2e348a949f1949d5c7aadbb3c37ed84a.s3tc.ctex"
+path.etc2="res://.godot/imported/Cc.jpg-2e348a949f1949d5c7aadbb3c37ed84a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Mini Market/Cc.jpg"
-dest_files=["res://.godot/imported/Cc.jpg-2e348a949f1949d5c7aadbb3c37ed84a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cc.jpg-2e348a949f1949d5c7aadbb3c37ed84a.s3tc.ctex", "res://.godot/imported/Cc.jpg-2e348a949f1949d5c7aadbb3c37ed84a.etc2.ctex"]
 
 [params]
 

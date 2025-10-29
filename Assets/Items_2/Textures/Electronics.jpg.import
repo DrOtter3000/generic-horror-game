@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://biaaq6yurojgl"
 path.s3tc="res://.godot/imported/Electronics.jpg-031f4227c20a65fa1a89df3c14c911ae.s3tc.ctex"
+path.etc2="res://.godot/imported/Electronics.jpg-031f4227c20a65fa1a89df3c14c911ae.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Items_2/Textures/Electronics.jpg"
-dest_files=["res://.godot/imported/Electronics.jpg-031f4227c20a65fa1a89df3c14c911ae.s3tc.ctex"]
+dest_files=["res://.godot/imported/Electronics.jpg-031f4227c20a65fa1a89df3c14c911ae.s3tc.ctex", "res://.godot/imported/Electronics.jpg-031f4227c20a65fa1a89df3c14c911ae.etc2.ctex"]
 
 [params]
 

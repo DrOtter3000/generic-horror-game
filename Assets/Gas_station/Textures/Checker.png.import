@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://br4elg4hukp6k"
 path.s3tc="res://.godot/imported/Checker.png-fd759a76d749d81fb37444d976bdcac3.s3tc.ctex"
+path.etc2="res://.godot/imported/Checker.png-fd759a76d749d81fb37444d976bdcac3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Checker.png"
-dest_files=["res://.godot/imported/Checker.png-fd759a76d749d81fb37444d976bdcac3.s3tc.ctex"]
+dest_files=["res://.godot/imported/Checker.png-fd759a76d749d81fb37444d976bdcac3.s3tc.ctex", "res://.godot/imported/Checker.png-fd759a76d749d81fb37444d976bdcac3.etc2.ctex"]
 
 [params]
 

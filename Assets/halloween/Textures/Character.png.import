@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://vjc21meketyf"
 path.s3tc="res://.godot/imported/Character.png-d8394b8d988a9cd921894bdb3f4c9a50.s3tc.ctex"
+path.etc2="res://.godot/imported/Character.png-d8394b8d988a9cd921894bdb3f4c9a50.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Character.png"
-dest_files=["res://.godot/imported/Character.png-d8394b8d988a9cd921894bdb3f4c9a50.s3tc.ctex"]
+dest_files=["res://.godot/imported/Character.png-d8394b8d988a9cd921894bdb3f4c9a50.s3tc.ctex", "res://.godot/imported/Character.png-d8394b8d988a9cd921894bdb3f4c9a50.etc2.ctex"]
 
 [params]
 

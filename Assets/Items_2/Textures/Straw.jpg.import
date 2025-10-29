@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c67l1l7650dfi"
 path.s3tc="res://.godot/imported/Straw.jpg-1e818f9cf517d4ee631b731f420564e9.s3tc.ctex"
+path.etc2="res://.godot/imported/Straw.jpg-1e818f9cf517d4ee631b731f420564e9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Items_2/Textures/Straw.jpg"
-dest_files=["res://.godot/imported/Straw.jpg-1e818f9cf517d4ee631b731f420564e9.s3tc.ctex"]
+dest_files=["res://.godot/imported/Straw.jpg-1e818f9cf517d4ee631b731f420564e9.s3tc.ctex", "res://.godot/imported/Straw.jpg-1e818f9cf517d4ee631b731f420564e9.etc2.ctex"]
 
 [params]
 

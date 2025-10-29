@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dal4oj3534ice"
 path.s3tc="res://.godot/imported/Mostrador.jpg-24e7e6131b7a649e96254b1e483dbb70.s3tc.ctex"
+path.etc2="res://.godot/imported/Mostrador.jpg-24e7e6131b7a649e96254b1e483dbb70.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/Mostrador.jpg"
-dest_files=["res://.godot/imported/Mostrador.jpg-24e7e6131b7a649e96254b1e483dbb70.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mostrador.jpg-24e7e6131b7a649e96254b1e483dbb70.s3tc.ctex", "res://.godot/imported/Mostrador.jpg-24e7e6131b7a649e96254b1e483dbb70.etc2.ctex"]
 
 [params]
 

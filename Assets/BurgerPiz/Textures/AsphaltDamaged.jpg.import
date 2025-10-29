@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://be4gvgdlevq8y"
 path.s3tc="res://.godot/imported/AsphaltDamaged.jpg-d55a7ddb0c8793f73412f7a28aa4bb35.s3tc.ctex"
+path.etc2="res://.godot/imported/AsphaltDamaged.jpg-d55a7ddb0c8793f73412f7a28aa4bb35.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/AsphaltDamaged.jpg"
-dest_files=["res://.godot/imported/AsphaltDamaged.jpg-d55a7ddb0c8793f73412f7a28aa4bb35.s3tc.ctex"]
+dest_files=["res://.godot/imported/AsphaltDamaged.jpg-d55a7ddb0c8793f73412f7a28aa4bb35.s3tc.ctex", "res://.godot/imported/AsphaltDamaged.jpg-d55a7ddb0c8793f73412f7a28aa4bb35.etc2.ctex"]
 
 [params]
 

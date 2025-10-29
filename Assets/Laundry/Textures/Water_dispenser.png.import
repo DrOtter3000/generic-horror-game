@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://vepkkcy6ccek"
 path.s3tc="res://.godot/imported/Water_dispenser.png-71e1a110a7478bdd8ad218ca37cbabad.s3tc.ctex"
+path.etc2="res://.godot/imported/Water_dispenser.png-71e1a110a7478bdd8ad218ca37cbabad.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Water_dispenser.png"
-dest_files=["res://.godot/imported/Water_dispenser.png-71e1a110a7478bdd8ad218ca37cbabad.s3tc.ctex"]
+dest_files=["res://.godot/imported/Water_dispenser.png-71e1a110a7478bdd8ad218ca37cbabad.s3tc.ctex", "res://.godot/imported/Water_dispenser.png-71e1a110a7478bdd8ad218ca37cbabad.etc2.ctex"]
 
 [params]
 

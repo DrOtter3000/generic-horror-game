@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bksro7rvlihin"
 path.s3tc="res://.godot/imported/Archivists.jpg-e9ae480dccaaa995fb1f1fd124fcc3e7.s3tc.ctex"
+path.etc2="res://.godot/imported/Archivists.jpg-e9ae480dccaaa995fb1f1fd124fcc3e7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Laundry/Textures/Archivists.jpg"
-dest_files=["res://.godot/imported/Archivists.jpg-e9ae480dccaaa995fb1f1fd124fcc3e7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Archivists.jpg-e9ae480dccaaa995fb1f1fd124fcc3e7.s3tc.ctex", "res://.godot/imported/Archivists.jpg-e9ae480dccaaa995fb1f1fd124fcc3e7.etc2.ctex"]
 
 [params]
 

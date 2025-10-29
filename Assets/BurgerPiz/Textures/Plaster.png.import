@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx18sr0a8hk6w"
 path.s3tc="res://.godot/imported/Plaster.png-0846228919f23efe9fbeedfacdb22a18.s3tc.ctex"
+path.etc2="res://.godot/imported/Plaster.png-0846228919f23efe9fbeedfacdb22a18.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Plaster.png"
-dest_files=["res://.godot/imported/Plaster.png-0846228919f23efe9fbeedfacdb22a18.s3tc.ctex"]
+dest_files=["res://.godot/imported/Plaster.png-0846228919f23efe9fbeedfacdb22a18.s3tc.ctex", "res://.godot/imported/Plaster.png-0846228919f23efe9fbeedfacdb22a18.etc2.ctex"]
 
 [params]
 

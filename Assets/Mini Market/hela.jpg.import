@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://i6jhb0drdd16"
 path.s3tc="res://.godot/imported/hela.jpg-c526acaad6ced13227bdcb4196da80dc.s3tc.ctex"
+path.etc2="res://.godot/imported/hela.jpg-c526acaad6ced13227bdcb4196da80dc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Mini Market/hela.jpg"
-dest_files=["res://.godot/imported/hela.jpg-c526acaad6ced13227bdcb4196da80dc.s3tc.ctex"]
+dest_files=["res://.godot/imported/hela.jpg-c526acaad6ced13227bdcb4196da80dc.s3tc.ctex", "res://.godot/imported/hela.jpg-c526acaad6ced13227bdcb4196da80dc.etc2.ctex"]
 
 [params]
 

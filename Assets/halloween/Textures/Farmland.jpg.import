@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmjbtlct3d37e"
 path.s3tc="res://.godot/imported/Farmland.jpg-e624f7f281f8fe6c39f3af50356e9442.s3tc.ctex"
+path.etc2="res://.godot/imported/Farmland.jpg-e624f7f281f8fe6c39f3af50356e9442.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Farmland.jpg"
-dest_files=["res://.godot/imported/Farmland.jpg-e624f7f281f8fe6c39f3af50356e9442.s3tc.ctex"]
+dest_files=["res://.godot/imported/Farmland.jpg-e624f7f281f8fe6c39f3af50356e9442.s3tc.ctex", "res://.godot/imported/Farmland.jpg-e624f7f281f8fe6c39f3af50356e9442.etc2.ctex"]
 
 [params]
 

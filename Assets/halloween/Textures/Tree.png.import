@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://sadjtf5b7aom"
 path.s3tc="res://.godot/imported/Tree.png-033ce02ff4f85267f99cbc818398aca1.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree.png-033ce02ff4f85267f99cbc818398aca1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/halloween/Textures/Tree.png"
-dest_files=["res://.godot/imported/Tree.png-033ce02ff4f85267f99cbc818398aca1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tree.png-033ce02ff4f85267f99cbc818398aca1.s3tc.ctex", "res://.godot/imported/Tree.png-033ce02ff4f85267f99cbc818398aca1.etc2.ctex"]
 
 [params]
 

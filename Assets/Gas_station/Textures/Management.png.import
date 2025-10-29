@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3op0mqgku6wc"
 path.s3tc="res://.godot/imported/Management.png-1b9914b610eb9c707211033f9eed521c.s3tc.ctex"
+path.etc2="res://.godot/imported/Management.png-1b9914b610eb9c707211033f9eed521c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Gas_station/Textures/Management.png"
-dest_files=["res://.godot/imported/Management.png-1b9914b610eb9c707211033f9eed521c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Management.png-1b9914b610eb9c707211033f9eed521c.s3tc.ctex", "res://.godot/imported/Management.png-1b9914b610eb9c707211033f9eed521c.etc2.ctex"]
 
 [params]
 

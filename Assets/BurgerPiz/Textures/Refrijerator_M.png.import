@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://mrviyg0l3cym"
 path.s3tc="res://.godot/imported/Refrijerator_M.png-9ede16caa6a6935cd7bbbf48fcd2313e.s3tc.ctex"
+path.etc2="res://.godot/imported/Refrijerator_M.png-9ede16caa6a6935cd7bbbf48fcd2313e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/BurgerPiz/Textures/Refrijerator_M.png"
-dest_files=["res://.godot/imported/Refrijerator_M.png-9ede16caa6a6935cd7bbbf48fcd2313e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Refrijerator_M.png-9ede16caa6a6935cd7bbbf48fcd2313e.s3tc.ctex", "res://.godot/imported/Refrijerator_M.png-9ede16caa6a6935cd7bbbf48fcd2313e.etc2.ctex"]
 
 [params]
 

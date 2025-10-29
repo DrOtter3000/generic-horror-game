@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://grtsu2gvfxpb"
 path.s3tc="res://.godot/imported/extinguisher.jpg-b8509972dc785ea9996492459421761c.s3tc.ctex"
+path.etc2="res://.godot/imported/extinguisher.jpg-b8509972dc785ea9996492459421761c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/6twelve/Textures/extinguisher.jpg"
-dest_files=["res://.godot/imported/extinguisher.jpg-b8509972dc785ea9996492459421761c.s3tc.ctex"]
+dest_files=["res://.godot/imported/extinguisher.jpg-b8509972dc785ea9996492459421761c.s3tc.ctex", "res://.godot/imported/extinguisher.jpg-b8509972dc785ea9996492459421761c.etc2.ctex"]
 
 [params]
 
