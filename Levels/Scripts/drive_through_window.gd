@@ -21,6 +21,7 @@ func _ready() -> void:
 	super()
 	timer.wait_time = wait_time
 	creature = get_tree().get_first_node_in_group("Creature")
+	get_tree().call_group("TV", "tv_noise", true, 2)
 	
 
 func interact() -> void:
