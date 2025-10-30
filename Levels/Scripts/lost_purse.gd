@@ -1,7 +1,5 @@
 extends task_interactor
 
-# TODO: add purse
-
 @onready var phone_sound: AudioStreamPlayer3D = $PhoneSound
 @onready var pick_up_phone_sound = preload("res://Audio/SFX/PickUpPhone.wav")
 @onready var hang_up_phone_sound = preload("res://Audio/SFX/HangUpPhone.wav")
@@ -17,7 +15,8 @@ var dialogue_array := [
 	["You:", "Yes, it is here, I can see it. You can pick it up tomorrow."],
 	["???:", "Can I pick it up right now? I'm next to the drive trough in a few seconds."],
 	["You:", "OK, why not. But please hurry up."],
-	["???:", "Thank you alot. Come to the window, I'm there right now!"]
+	["???:", "Thank you alot. Come to the window, I'm there right now!"],
+	["", ""]
 ]
 
 func _ready() -> void:
@@ -42,6 +41,8 @@ func _process(delta: float) -> void:
 			ready_to_continue_dialogue = false
 			get_tree().call_group("HUD", "update_communication_container", dialogue_array[dialogue_to_play][0], dialogue_array[dialogue_to_play][1])
 			dialogue_to_play += 1
+			if dialogue_to_play == 6:
+				get_tree().call_group("Purse", "queue_free")
 			if dialogue_to_play == dialogue_array.size():
 				quit_dialogue()
 			else:

@@ -14,7 +14,8 @@ var dialogue_array := [
 	["Creature:", "Thank you. Oh, one more question. What is your perfume? It smells... tasty."],
 	["You:", "I don't use perfume."],
 	["Creature:", "Oh... then I have to leave. Fast... you smell tasty. See you."],
-	["You:", "See you!"]
+	["You:", "See you!"],
+	["", ""]
 ]
 
 func _ready() -> void:

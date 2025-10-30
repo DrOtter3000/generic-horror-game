@@ -7,6 +7,7 @@ extends Node3D
 @onready var drive_through_position: Node3D = $DriveThroughPosition
 @onready var creature_position: Node3D = $CreaturePosition
 
+
 func add_lost_purse() -> void:
 	var lost_purse_instance = lost_purse.instantiate()
 	add_child(lost_purse_instance)
