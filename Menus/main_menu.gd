@@ -6,6 +6,7 @@ extends Control
 
 func _ready() -> void:
 	AudioManager.horror_ambient_player.play()
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if Gamestate.played_through:
 		continue_button.show()
 	else:
